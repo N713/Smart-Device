@@ -30,7 +30,13 @@
       <p>Производство и монтаж, поставка комплектующих, блоков и модулей</p>
       <button class="print-plates__button button">Получить бесплатную консультацию</button>
       <a class="print-plates__link" href="#">Скролл вниз</a>
-      <img src="img/plate-desktop@1x.jpg" width="705" height="515">
+      <picture>
+        <img src="img/plate-desktop@1x.jpg" width="705" height="515"
+             srcset="img/plate-desktop@2x.jpg 2x" alt="Печатная плата">
+        <source type="image/webp"
+             srcset="img/plate-desktop-mask@1x.webp 1x,
+                     img/plate-desktop-mask@2x.webp 2x">
+      </picture>
       <img src="img/desktop-plate-triangles.svg" width="705" height="515">
     </section>
   </div>
