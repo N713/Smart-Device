@@ -1,0 +1,24 @@
+.button {
+  font-family: $robotoBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $whiteColor;
+  background-color: transparent;
+  border: 1px solid $whiteColor;
+  border-radius: 5px;
+  padding: 10px 17px;
+}
+
+.button--consult {
+  width: 407px;
+  height: 55px;
+  background-color: $mainBlueColor;
+  border-color: $mainBlueColor;
+  margin-top: 37px;
+  margin-left: 94px;
+}

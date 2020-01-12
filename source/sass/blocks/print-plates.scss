@@ -1,0 +1,59 @@
+.print-plates {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 258px;
+}
+
+.print-plates h2 {
+  width: 718px;
+  font-family: $robotoBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  @include reset;
+  margin-top: 231px;
+}
+
+.print-plates p {
+  width: 624px;
+  font-family: $ptMono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 34px;
+
+  @include reset;
+  margin-top: 31px;
+  padding-left: 94px;
+  position: relative;
+}
+
+.print-plates p::after {
+  content: '';
+  display: inline-block;
+  width: 66px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  background-color: $whiteColor;
+}
+
+.print-plates a {
+  width: 93px;
+  height: 16px;
+  font-family: $ptMono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  color: $whiteColor;
+  opacity: 0.5;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 729px;
+}
