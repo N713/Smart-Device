@@ -1,6 +1,6 @@
 .container {
   background-color: $mainColor;
-  background-image: url("../img/plate-desktop-mask@1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("../img/plate-desktop-mask@1x.png"), url("../img/plate-desktop-mask@1x.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
 }

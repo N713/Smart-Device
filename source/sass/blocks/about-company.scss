@@ -1,0 +1,40 @@
+.about-company {
+  box-sizing: border-box;
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 77px;
+  padding-left: 180px;
+  padding-right: 10px;
+  padding-bottom: 110px;
+  color: #666666;
+}
+
+.about-company::before {
+  content: url("../img/2005@1x.png");
+  display: inline-block;
+  width: 170px;
+  height: 317px;
+  position: absolute;
+  left: -30px;
+}
+
+.about-company h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+
+  @include reset;
+}
+
+.about-company p {
+  font-family: $ptMono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  @include reset;
+  margin-top: 20px;
+}

@@ -1,0 +1,91 @@
+.offer {
+  width: 100%;
+  background-color: $mainColor;
+  color: $whiteColor;
+  padding-bottom: 127px;
+}
+
+.offer h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+
+  @include reset;
+  margin-top: 90px;
+}
+
+.offer__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 47px;
+}
+
+.offer__list-item {
+  background-color: $mainColor;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offer__list-item:nth-child(1n) {
+  background-image: url("../img/develop-plates@1x.jpg");
+}
+
+.offer__list-item:nth-child(2n) {
+  background-image: url("../img/mount-plates@1x.jpg");
+}
+
+.offer__list-item:nth-child(3n) {
+  background-color: $mainColor;
+  background-image: url("../img/parts-for-lights@1x.png");
+}
+
+.offer__list-link {
+  display: flex;
+  box-sizing: border-box;
+  min-width: 370px;
+  min-height: 620px;
+
+  @include reset;
+  padding: 54px 45px;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+  background: rgba(27, 45, 55, 0.7);
+}
+
+.offer__list-link p {
+  width: 162px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: $whiteColor;
+}
+
+.offer__list-link div {
+  width: 63px;
+  height: 63px;
+  background: $mainBlueColor;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.offer__list-link div::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+
+  border: 1px solid $whiteColor;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}

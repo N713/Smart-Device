@@ -1,0 +1,27 @@
+.list {
+  list-style: none;
+
+  @include reset;
+}
+
+.list__item {
+  @include reset;
+}
+
+.list__link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.list__link p {
+  font-family: $robotoRegular;
+
+  @include reset;
+}
+
+.list__link p:nth-of-type(2n) {
+  font-family: $ptMono;
+
+  @include reset;
+}

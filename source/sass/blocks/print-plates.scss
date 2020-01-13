@@ -1,7 +1,11 @@
 .print-plates {
+  width: 1411px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  align-items: flex-start;
   padding-bottom: 258px;
+  margin: 0 auto;
 }
 
 .print-plates h2 {
@@ -13,9 +17,9 @@
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-
   @include reset;
   margin-top: 231px;
+  margin-left: -5px;
 }
 
 .print-plates p {
@@ -27,7 +31,7 @@
   line-height: 34px;
 
   @include reset;
-  margin-top: 31px;
+  margin-top: 25px;
   padding-left: 94px;
   position: relative;
 }
@@ -39,6 +43,7 @@
   height: 2px;
   position: absolute;
   left: 0;
+  top: 15px;
   background-color: $whiteColor;
 }
 
@@ -55,5 +60,6 @@
   opacity: 0.5;
   transform: rotate(-90deg);
   position: absolute;
-  top: 729px;
+  top: 732px;
+  left: 215px;
 }

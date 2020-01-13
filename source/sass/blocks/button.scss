@@ -11,14 +11,29 @@
   background-color: transparent;
   border: 1px solid $whiteColor;
   border-radius: 5px;
-  padding: 10px 17px;
+  padding: 13px 26px;
 }
 
 .button--consult {
-  width: 407px;
-  height: 55px;
+  min-height: 55px;
+  font-size: 16px;
+  line-height: 19px;
   background-color: $mainBlueColor;
   border-color: $mainBlueColor;
-  margin-top: 37px;
+  margin-top: 45px;
   margin-left: 94px;
+  padding: 0 44px;
+}
+
+.button--more {
+  box-sizing: border-box;
+  min-width: 180px;
+  color: $mainBlueColor;
+  border: 1px solid $mainBlueColor;
+  margin-top: 40px;
+}
+
+.button--submit {
+  box-sizing: border-box;
+  width: 270px;
 }
