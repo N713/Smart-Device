@@ -1,0 +1,30 @@
+.office-list {
+  margin-top: 20px;
+}
+
+.office-list h5 {
+  font-family: $robotoRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1B2D37;
+
+  @include reset;
+}
+
+.office-list__item {
+  font-family: $ptMono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+  color: #1B2D37;
+}
+
+.office__link {
+  color: #1B2D37;
+}

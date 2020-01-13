@@ -2,7 +2,7 @@
   width: 100%;
   background-color: $mainColor;
   color: $whiteColor;
-  padding-bottom: 127px;
+  padding-bottom: 117px;
 }
 
 .offer h3 {
@@ -17,6 +17,7 @@
 
 .offer__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 47px;
 }
@@ -25,6 +26,7 @@
   background-color: $mainColor;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 10px;
 }
 
 .offer__list-item:nth-child(1n) {

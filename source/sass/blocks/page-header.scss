@@ -47,9 +47,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end;
+  min-width: 700px;
 }
 
 .page-header__link {
+  display: flex;
   font-family: $ptMono;
   font-style: normal;
   font-weight: normal;
@@ -57,43 +60,30 @@
   line-height: 18px;
   color: $whiteColor;
   text-decoration: none;
-  margin-left: 16px;
   position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
-.page-header__link--mail {
-  padding-left: 39px;
+.page-header__link p {
+  @include reset;
 }
 
 .page-header__link--tel {
-  padding-left: 34px;
-  margin-left: 88px;
-  padding-right: 13px;
+  margin-left: 90px;
 }
 
-.page-header__link--mail::before {
-  background-image: url("../img/icon-mail.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.page-header__link--tel svg {
+  margin-right: 15px;
 }
 
-.page-header__link--tel::before {
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.page-header__link::before {
-  content: '';
-  display: inline-block;
-  width: 19px;
-  height: 18px;
-  position: absolute;
-  top: 0;
-  left: 0;
+.page-header__link--mail svg {
+  margin-right: 18px;
 }
 
 .page-header__button {
-  margin-left: 38px;
+  margin-left: 50px;
   margin-bottom: 5px;
 }

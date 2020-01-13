@@ -13,23 +13,23 @@
   <style>
     HTML {
       background-repeat: no-repeat;
-      background-position:  50% 0;
+      background-position: 50% 0;
       /* По умолчанию показывается мобильный макет */
-      /*background-image: url( "img/Smart Device.png" );
+      /*background-image: url("img/Smart Device.png");
       opacity: 0.7;
     }
     /* Планшет */
-    @media ( min-width: 760px ) {
+    @media (min-width:760px) {
       HTML {
         /* Планшетный макет */
-        background-image: url( "img/760.png" );
+        /*background-image: url("img/760.png");
       }
     }
     /* Десктоп */
-    @media ( min-width: 1366px ) {
+    @media (min-width: 1366px) {
       HTML {
         /* Десктопный макет */
-        background-image: url( "img/Smart Device.png" );
+        /*background-image: url("img/Smart Device.png");
       }
     }
   </style>
@@ -50,8 +50,18 @@
           </div>
         </div>
         <div class="page-header__links-wrapper">
-          <a class="page-header__link page-header__link--mail" href="mailto:info@sd.ru">info@sd.ru</a>
-          <a class="page-header__link page-header__link--tel" hfer="tel:+74950005252">+7 (495) 000 52 52</a>
+          <a class="page-header__link page-header__link--mail" href="mailto:info@sd.ru">
+            <svg width="19" height="14">
+              <use xlink:href="img/sprite.svg#icon-mail"></use>
+            </svg>
+            <p>info@sd.ru</p>
+          </a>
+          <a class="page-header__link page-header__link--tel" hfer="tel:+74950005252">
+            <svg width="18" height="18">
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
+            <p>+7 (495) 000 52 52</p>
+          </a>
           <button class="page-header__button button">Заказать звонок</button>
         </div>
       </header>
@@ -168,80 +178,113 @@
   </section>
   <section class="consult">
     <div class="wrapper wrapper--consult">
-      <h3>Остались вопросы? Задайте их нам!</h3>
-      <p>Мы проконсультируем Вас бесплатно</p>
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__name">
-          <label class="visually-hidden" for="first-name">Имя</label>
-          <input type="text" id="first-name" placeholder="Имя" required="">
-        </div>
-        <div class="form__tel">
-          <label class="visually-hidden" for="number">Номер телефона</label>
-          <input type="tel" id="number" placeholder="Телефон" required="">
-        </div>
-        <textarea id="question-field" required="">Ваш вопрос</textarea>
-        <button class="form__submit button button--submit" type="submit">Задать вопрос</button>
-        <div class="form__agreement">
-          <input type="checkbox" id="personal-agreement" checked="">
-          <label for="personal-agreement">
-            <span>Я согласен на обработку персональных данных</span>
-          </label>
-        </div>
-      </form>
+      <div class="wrapper wrapper--consult-second">
+        <h3>Остались вопросы? Задайте их нам!</h3>
+        <p>Мы проконсультируем Вас бесплатно</p>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__name">
+            <label class="visually-hidden" for="first-name">Имя</label>
+            <input type="text" id="first-name" placeholder="Имя" required="">
+          </div>
+          <div class="form__tel">
+            <label class="visually-hidden" for="number">Номер телефона</label>
+            <input type="tel" id="number" placeholder="Телефон" required="">
+          </div>
+          <textarea id="question-field" required="">Ваш вопрос</textarea>
+          <button class="form__submit button button--submit" type="submit">Задать вопрос</button>
+          <div class="form__agreement">
+            <input type="checkbox" id="personal-agreement" checked="">
+            <label for="personal-agreement">
+              <span>Я согласен на обработку персональных данных</span>
+            </label>
+          </div>
+        </form>
+      </div>
     </div>
   </section>
   <footer class="page-footer">
-    <div class="page-footer__logo-wrapper">
-      <img src="img/icon-brains.svg" width="52" height="52">
-      <div class="page-footer__logo-text-wrapper">
-        <p>Smart Device</p>
-        <p>Умные технологии</p>
+    <div class="wrapper wrapper--footer">
+      <div class="page-footer__logo-wrapper">
+        <img src="img/icon-brains.svg" width="52" height="52">
+        <div class="page-footer__logo-text-wrapper">
+          <p>Smart Device</p>
+          <p>Умные технологии</p>
+        </div>
+        <ul class="socials-list list">
+          <li class="socials-list__item">
+            <a class="soicals-list__link">
+              <svg width="27" height="27">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <svg width="27" height="27">
+              <use xlink:href="img/sprite.svg#icon-classmates"></use>
+            </svg>
+          </li>
+          <li class="socials-list__item">
+            <a class="soicals-list__link">
+              <svg width="27" height="27">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="wrapper wrapper--parts-list">
+        <h5>Разделы сайта</h5>
+        <ul class="site-parts-list list">
+          <li class="site-parts-list__item list__item">
+            <a class="site-parts-list__link list__link" href="#">О компании</a>
+          </li>
+          <li class="site-parts-list__item list__item">
+            <a class="site-parts-list__link list__link" href="#">Продукты</a>
+          </li>
+          <li class="site-parts-list__item list__item">
+            <a class="site-parts-list__link list__link" href="#">Производство печатных плат</a>
+          </li>
+          <li class="site-parts-list__item list__item">
+            <a class="site-parts-list__link list__link" href="#">Монтаж печатных плат</a>
+          </li>
+        </ul>
+        <ul class="site-parts-list list">
+          <li class="site-parts-list__item list__item">
+            <a class="site-parts-list__link list__link" href="#">Комплектующие</a>
+          </li>
+          <li class="site-parts-list__item list__item">
+            <a class="site-parts-list__link list__link" href="#">Доставка</a>
+          </li>
+          <li class="site-parts-list__item list__item">
+            <a class="site-parts-list__link list__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="wrapper wrapper--office">
+        <h5>Наш офис</h5>
+        <ul class="office-list list">
+          <li class="office-list__item list__item">
+            <a class="office__link list__link" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
+          </li>
+          <li class="office-list__item list__item">
+            <a class="office__link list__link" hfer="tel:+74955894050">+7 (495) 589-40-50</a>
+          </li>
+          <li class="office-list__item list__item">
+            <a class="office__link list__link" hfer="tel:+79250038767">+7 (925) 003-87-67</a>
+          </li>
+          <li class="office-list__item list__item">
+            <a class="office__link list__link" hfer="tel:+792692608079">+7 (926) 926-080-79</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <ul class="site-parts-list list">
-      <h5>Разделы сайта</h5>
-      <li class="site-parts-list__item list__item">
-        <a class="site-parts-list__link list__link" href="#">О компании</a>
-      </li>
-      <li class="site-parts-list__item list__item">
-        <a class="site-parts-list__link list__link" href="#">Продукты</a>
-      </li>
-      <li class="site-parts-list__item list__item">
-        <a class="site-parts-list__link list__link" href="#">Производство печатных плат</a>
-      </li>
-      <li class="site-parts-list__item list__item">
-        <a class="site-parts-list__link list__link" href="#">Монтаж печатных плат</a>
-      </li>
-      <li class="site-parts-list__item list__item">
-        <a class="site-parts-list__link list__link" href="#">Комплектующие</a>
-      </li>
-      <li class="site-parts-list__item list__item">
-        <a class="site-parts-list__link list__link" href="#">Доставка</a>
-      </li>
-      <li class="site-parts-list__item list__item">
-        <a class="site-parts-list__link list__link" href="#">Контакты</a>
-      </li>
-    </ul>
-    <ul class="office-list list">
-      <h5>Наш офис</h5>
-      <li class="office-list__item list__item">
-        <a class="office__link list__link" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
-      </li>
-      <li class="office-list__item list__item">
-        <a class="office__link list__link" hfer="tel:+74955894050">+7 (495) 589-40-50</a>
-      </li>
-      <li class="office-list__item list__item">
-        <a class="office__link list__link" hfer="tel:+79250038767">+7 (925) 003-87-67</a>
-      </li>
-      <li class="office-list__item list__item">
-        <a class="office__link list__link" hfer="tel:+792692608079">+7 (926) 926-080-79</a>
-      </li>
-    </ul>
     <div class="copyright">
-      <span class="copyright__item">Все права защищены</span>
-      <span class="copyright__item">1999-2018 SD Service Devices</span>
-      <a class="copyright__item" href="#">Условия конфиденциальности</a>
-      <a class="copyright__item" href="#">Developed by wow studio</a>
+      <div class="copyright__container">
+        <span class="copyright__item">Все права защищены</span>
+        <span class="copyright__item">1999-2018 SD Service Devices</span>
+        <a class="copyright__item" href="#">Условия конфиденциальности</a>
+        <a class="copyright__item" href="#">Developed by wow studio</a>
+      </div>
     </div>
   </footer>
   <div class="modal">
