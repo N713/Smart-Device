@@ -1,0 +1,11 @@
+.intro {
+  background-image: url("../img/plate-desktop@1x.png"), url("../img/desktop-plate-triangles.svg");
+  background-repeat: no-repeat;
+  background-position: top 260px right 177px, top right;
+
+  display: flex;
+  flex-direction: column;
+  color: $whiteColor;
+
+  padding-top: 35px;
+}

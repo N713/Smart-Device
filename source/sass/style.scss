@@ -1,10 +1,11 @@
 @import "fonts";
-@import "blocks/visually-hidden";
-@import "blocks/variables";
-@import "blocks/mixins";
+@import "variables";
+@import "mixins";
 
+@import "blocks/base";
+@import "blocks/intro";
+@import "blocks/visually-hidden";
 @import "blocks/container";
-@import "blocks/wrapper";
 @import "blocks/page-header";
 @import "blocks/print-plates";
 @import "blocks/button";
@@ -15,13 +16,8 @@
 @import "blocks/consult";
 @import "blocks/form";
 @import "blocks/page-footer";
+@import "blocks/outro";
 @import "blocks/socials-list";
 @import "blocks/site-parts-list";
 @import "blocks/office-list";
 @import "blocks/copyright";
-
-body {
-  font-family: $robotoRegular;
-
-  @include reset;
-}

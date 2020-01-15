@@ -15,22 +15,8 @@
       background-repeat: no-repeat;
       background-position: 50% 0;
       /* По умолчанию показывается мобильный макет */
-      /*background-image: url("img/Smart Device.png");
-      opacity: 0.7;
-    }
-    /* Планшет */
-    @media (min-width:760px) {
-      HTML {
-        /* Планшетный макет */
-        /*background-image: url("img/760.png");
-      }
-    }
-    /* Десктоп */
-    @media (min-width: 1366px) {
-      HTML {
-        /* Десктопный макет */
-        /*background-image: url("img/Smart Device.png");
-      }
+      background-image: url("img/Smart Device.png");
+      opacity: 0.7;*/
     }
   </style>
   <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
@@ -40,10 +26,13 @@
 <body>
   <h1 class="visually-hidden">Smart Device. Умные технологии</h1>
   <div class="container">
-    <div class="wrapper wrapper--header">
+    <div class="intro">
       <header class="page-header">
         <div class="page-header__logo-wrapper">
-          <img src="img/icon-brains.svg" width="52" height="52">
+          <img src="img/icon-brains.svg" width="52" height="52" alt="Логотип">
+          <img src="img/smart-device@1x.png" width="133" height="20">
+          <img src="img/smart-tech@1x.png.svg" width="105" height="10">
+          <img src="img/logo@1x.png" width="202" height="52" alt="Логотип">
           <div class="page-header__logo-text-wrapper">
             <p>Smart Device</p>
             <p>Умные технологии</p>
@@ -56,7 +45,7 @@
             </svg>
             <p>info@sd.ru</p>
           </a>
-          <a class="page-header__link page-header__link--tel" hfer="tel:+74950005252">
+          <a class="page-header__link page-header__link--tel" href="tel:+74950005252">
             <svg width="18" height="18">
               <use xlink:href="img/sprite.svg#icon-phone"></use>
             </svg>
@@ -73,7 +62,7 @@
       </section>
     </div>
   </div>
-  <div class=" wrapper wrapper--features-and-about">
+  <div class="features__wrapper">
     <section class="features">
       <h3 class="visually-hidden">Преимущества</h3>
       <ul class="features__list list">
@@ -152,7 +141,7 @@
     </section>
   </div>
   <section class="offer">
-    <div class="wrapper wrapper--offer">
+    <div class="offer__wrapper">
       <h3>Service Device предлагает следующие товары и услуги</h3>
       <ul class="offer__list list">
         <li class="offer__list-item list__item">
@@ -177,8 +166,8 @@
     </div>
   </section>
   <section class="consult">
-    <div class="wrapper wrapper--consult">
-      <div class="wrapper wrapper--consult-second">
+    <div class="consult__wrapper">
+      <div class="consult__wrapper-second">
         <h3>Остались вопросы? Задайте их нам!</h3>
         <p>Мы проконсультируем Вас бесплатно</p>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
@@ -203,28 +192,31 @@
     </div>
   </section>
   <footer class="page-footer">
-    <div class="wrapper wrapper--footer">
+    <div class="outro">
       <div class="page-footer__logo-wrapper">
-        <img src="img/icon-brains.svg" width="52" height="52">
+        <!-- <img src="img/icon-brains.svg" width="52" height="52"> -->
+        <img src="img/logo@1x.png" width="202" height="52" alt="Логотип">
         <div class="page-footer__logo-text-wrapper">
           <p>Smart Device</p>
           <p>Умные технологии</p>
         </div>
         <ul class="socials-list list">
           <li class="socials-list__item">
-            <a class="soicals-list__link">
+            <a class="socials-list__link">
               <svg width="27" height="27">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="socials-list__item">
-            <svg width="27" height="27">
-              <use xlink:href="img/sprite.svg#icon-classmates"></use>
-            </svg>
+            <a class="socials-list__link">
+              <svg width="27" height="27">
+                <use xlink:href="img/sprite.svg#icon-classmates"></use>
+              </svg>
+            </a>
           </li>
           <li class="socials-list__item">
-            <a class="soicals-list__link">
+            <a class="socials-list__link">
               <svg width="27" height="27">
                 <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
@@ -232,7 +224,7 @@
           </li>
         </ul>
       </div>
-      <div class="wrapper wrapper--parts-list">
+      <div class="site-parts-list__wrapper">
         <h5>Разделы сайта</h5>
         <ul class="site-parts-list list">
           <li class="site-parts-list__item list__item">
@@ -260,20 +252,20 @@
           </li>
         </ul>
       </div>
-      <div class="wrapper wrapper--office">
+      <div class="office-list__wrapper">
         <h5>Наш офис</h5>
         <ul class="office-list list">
           <li class="office-list__item list__item">
-            <a class="office__link list__link" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
+            <a class="office-list__link list__link" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
           </li>
           <li class="office-list__item list__item">
-            <a class="office__link list__link" hfer="tel:+74955894050">+7 (495) 589-40-50</a>
+            <a class="office-list__link list__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
           </li>
           <li class="office-list__item list__item">
-            <a class="office__link list__link" hfer="tel:+79250038767">+7 (925) 003-87-67</a>
+            <a class="office-list__link list__link" href="tel:+79250038767">+7 (925) 003-87-67</a>
           </li>
           <li class="office-list__item list__item">
-            <a class="office__link list__link" hfer="tel:+792692608079">+7 (926) 926-080-79</a>
+            <a class="office-list__link list__link" href="tel:+792692608079">+7 (926) 926-080-79</a>
           </li>
         </ul>
       </div>
@@ -288,7 +280,7 @@
     </div>
   </footer>
   <div class="modal">
-    <img src="img/icon-close.svg" width="17" height="17">
+    <img src="img/icon-close.svg" width="17" height="17" alt="Закрыть окно">
     <h3>Закажите звонок</h3>
     <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset>

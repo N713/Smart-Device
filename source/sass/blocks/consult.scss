@@ -9,6 +9,19 @@
   background-position: left 350px top 165px, right 855px top -176px;
 }
 
+.consult__wrapper {
+  width: 1170px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 auto;
+}
+
+.consult__wrapper-second {
+  width: 570px;
+}
+
 .consult h3,
 .consult p {
   @include reset;

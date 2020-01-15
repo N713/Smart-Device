@@ -3,6 +3,32 @@
   margin-right: 75px;
 }
 
+.site-parts-list__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 515px;
+  margin-top: -5px;
+  padding-left: 70px;
+}
+
+.site-parts-list__wrapper h5 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-family: $robotoRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1B2D37;
+
+  @include reset
+  margin-top: 5px;
+}
+
 .site-parts-list__item {
   font-family: $ptMono;
   font-style: normal;
