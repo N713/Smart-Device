@@ -10,13 +10,21 @@
   width: 206px;
 }
 
+.page-footer__logo-link {
+  display: flex;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .page-footer__logo-wrapper img {
   margin-right: 16px;
-  margin-left: -3px;
+  margin-left: -2px;
 }
 
 .page-footer__logo-text-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
 }

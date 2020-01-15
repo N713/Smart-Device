@@ -1,6 +1,9 @@
 .about-company {
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   width: 1170px;
+  min-height: 317px;
   margin: 0 auto;
   position: relative;
   margin-top: 77px;
@@ -37,4 +40,8 @@
 
   @include reset;
   margin-top: 20px;
+}
+
+.about-company__button {
+  width: 180px;
 }
