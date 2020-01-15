@@ -18,29 +18,7 @@
 .page-header__logo-text-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.page-header__logo-text-wrapper p {
-  @include reset;
-}
-
-.page-header__logo-text-wrapper p:nth-of-type(1n) {
-  font-family: $robotoRegular;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 29px;
-}
-
-.page-header__logo-text-wrapper p:nth-of-type(2n) {
-  font-family: $robotoRegular;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  text-transform: lowercase;
-  color: #788891;
+  justify-content: space-around;
 }
 
 .page-header__links-wrapper {

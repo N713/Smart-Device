@@ -20,26 +20,3 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-
-.page-footer__logo-text-wrapper p {
-  @include reset;
-}
-
-.page-footer__logo-text-wrapper p:nth-of-type(1n) {
-  font-family: $robotoRegular;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 25px;
-  line-height: 29px;
-  color: #203C42;
-}
-
-.page-footer__logo-text-wrapper p:nth-of-type(2n) {
-  font-family: $robotoRegular;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  text-transform: lowercase;
-  color: #788891;
-}
