@@ -78,15 +78,15 @@
   color: $whiteColor;
 }
 
-input[type="checkbox"]:checked,
-input[type="checkbox"]:not(:checked),
+.form__agreement input[type="checkbox"]:checked,
+.form__agreement input[type="checkbox"]:not(:checked),
 {
   position: absolute;
   left: -9999px;
 }
 
-input[type="checkbox"]:checked + label,
-input[type="checkbox"]:not(:checked) + label, {
+.form__agreement input[type="checkbox"]:checked + label,
+.form__agreement input[type="checkbox"]:not(:checked) + label, {
   display: inline-block;
   position: relative;
   padding-left: 40px;
@@ -95,8 +95,8 @@ input[type="checkbox"]:not(:checked) + label, {
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked + label:before,
-input[type="checkbox"]:not(:checked) + label:before, {
+.form__agreement input[type="checkbox"]:checked + label:before,
+.form__agreement input[type="checkbox"]:not(:checked) + label:before, {
   content: "";
   position: absolute;
   left: 6px;
@@ -106,14 +106,14 @@ input[type="checkbox"]:not(:checked) + label:before, {
   border: 1px solid $whiteColor;
 }
 
-input[type="checkbox"]:checked + label:after,
-input[type="checkbox"]:not(:checked) + label:after {
+.form__agreement input[type="checkbox"]:checked + label:after,
+.form__agreement input[type="checkbox"]:not(:checked) + label:after {
   content: "";
   position: absolute;
 }
 
-input[type="checkbox"]:checked + label:after,
-input[type="checkbox"]:not(:checked) + label:after {
+.form__agreement input[type="checkbox"]:checked + label:after,
+.form__agreement input[type="checkbox"]:not(:checked) + label:after {
   left: 11px;
   top: 15px;
   width: 7.5px;
@@ -123,10 +123,10 @@ input[type="checkbox"]:not(:checked) + label:after {
   transform: rotate(-45deg);
 }
 
-input[type="checkbox"]:not(:checked) + label:after {
+.form__agreement input[type="checkbox"]:not(:checked) + label:after {
   opacity: 0;
 }
 
-input[type="checkbox"]:checked + label:after {
+.form__agreement input[type="checkbox"]:checked + label:after {
   opacity: 1;
 }

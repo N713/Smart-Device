@@ -54,13 +54,13 @@
       <section class="print-plates">
         <h2>Печатные платы</h2>
         <p>Производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="print-plates__button button button--consult" href="#modal">Получить бесплатную консультацию</a>
-        <a class="print-plates__link" href="#">Скролл вниз</a>
+        <a class="print-plates__button button button--consult" href="#consult">Получить бесплатную консультацию</a>
+        <a class="print-plates__link" href="#features">Скролл вниз</a>
       </section>
     </div>
   </div>
   <div class="features__wrapper">
-    <section class="features">
+    <section class="features" id="features">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="features__list list">
         <li class="features__list-item list__item">
@@ -162,7 +162,7 @@
       </ul>
     </div>
   </section>
-  <section class="consult">
+  <section class="consult" id="consult">
     <div class="consult__wrapper">
       <div class="consult__wrapper-second">
         <h3>Остались вопросы? Задайте их нам!</h3>
@@ -278,26 +278,28 @@
     </div>
   </footer>
   <div class="modal" id="modal">
-    <img src="img/icon-close.svg" width="17" height="17" alt="Закрыть окно">
-    <h3>Закажите звонок</h3>
-    <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset>
-        <legend>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</legend>
-        <div class="form__name">
-          <label class="visually-hidden" for="name-first">Имя</label>
-          <input type="text" id="name-first" placeholder="Имя" required="">
-        </div>
-        <div class="form__tel">
-          <label class="visually-hidden" for="tel-number">Номер телефона</label>
-          <input type="tel" id="tel-number" placeholder="Телефон" required="">
-        </div>
-        <textarea id="question" rows="20" required="">Ваш вопрос</textarea>
-      </fieldset>
-      <button class="form__submit button" type="submit">Задать вопрос</button>
-      <input type="checkbox" id="agreement" checked="">
-      <label for="agreement">
-        <span>Я согласен на обработку персональных данных</span>
-      </label>
+    <svg role="button" width="17" height="17">
+      <use xlink:href="img/sprite.svg#icon-close"></use>
+    </svg>
+    <h2>Закажите звонок</h2>
+    <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+      <h3>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</h3>
+      <div class="modal__form-name">
+        <label class="visually-hidden" for="name-first">Имя</label>
+        <input type="text" id="name-first" placeholder="Имя" required="">
+      </div>
+      <div class="modal__form-tel">
+        <label class="visually-hidden" for="tel-number">Номер телефона</label>
+        <input type="tel" id="tel-number" placeholder="Телефон" required="">
+      </div>
+      <textarea id="question" rows="20" required="">Ваш вопрос</textarea>
+      <button class="form__submit button" type="submit">Отправить</button>
+      <div class="modal__form-agreement">
+        <input type="checkbox" id="agreement" checked="">
+        <label for="agreement">
+          <span>Я согласен на обработку персональных данных</span>
+        </label>
+      </div>
     </form>
   </div>
 </body>

@@ -1,0 +1,155 @@
+.modal {
+  position: relative;
+  box-sizing: border-box;
+  width: 490px;
+  margin: 0 auto;
+  color: $whiteColor;
+  padding: 33px 39.2px;
+}
+
+.modal,
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  background-color: $mainBlueColor;
+}
+
+.modal svg {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20.44px;
+  width: 17px;
+  height: 17px;
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.modal h2,
+.modal__form h3 {
+  @include reset;
+}
+
+.modal h2 {
+  font-family: $robotoRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 39px;
+}
+
+.modal__form h3 {
+  font-family: $ptMono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 14px;
+  margin-bottom: 35px;
+}
+
+.modal__form input,
+.modal__form textarea {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-family: $ptMono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 14.5px 24.13px;
+  margin-bottom: 30px;
+}
+
+.modal__form input {
+  box-sizing: border-box;
+  height: 51.8px;
+  padding-top: 13.49px;
+}
+
+.modal__form textarea {
+  box-sizing: border-box;
+  resize: none;
+  width: 411.4px;
+  height: 104px;
+  color: $whiteColor;
+}
+
+.modal__form-agreement {
+  margin-top: 24px;
+}
+
+.modal__form-agreement span {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 337.66px;
+  font-family: $ptMono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.8;
+
+  @include reset;
+}
+
+.modal__form-agreement input[type="checkbox"]:checked,
+.modal__form-agreement input[type="checkbox"]:not(:checked),
+{
+  position: absolute;
+  left: -9999px;
+}
+
+.modal__form-agreement input[type="checkbox"]:checked + label,
+.modal__form-agreement input[type="checkbox"]:not(:checked) + label, {
+  display: inline-block;
+  position: relative;
+  padding-left: 40px;
+  padding-top: 10px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.modal__form-agreement input[type="checkbox"]:checked + label:before,
+.modal__form-agreement input[type="checkbox"]:not(:checked) + label:before, {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $whiteColor;
+}
+
+.modal__form-agreement input[type="checkbox"]:checked + label:after,
+.modal__form-agreement input[type="checkbox"]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+}
+
+.modal__form-agreement input[type="checkbox"]:checked + label:after,
+.modal__form-agreement input[type="checkbox"]:not(:checked) + label:after {
+  left: 5px;
+  top: 15px;
+  width: 7.5px;
+  height: 4.5px;
+  border-left: 1px solid $whiteColor;
+  border-bottom: 1px solid $whiteColor;
+  transform: rotate(-45deg);
+}
+
+.modal__form-agreement input[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+}
+
+.modal__form-agreement input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
