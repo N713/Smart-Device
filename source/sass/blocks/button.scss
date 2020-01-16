@@ -12,7 +12,7 @@
   background-color: transparent;
   border: 1px solid $whiteColor;
   border-radius: 5px;
-  padding: 13px 26px;
+  padding: 13px 28px;
 }
 
 .button--consult {
@@ -22,8 +22,6 @@
   line-height: 19px;
   background-color: $mainBlueColor;
   border-color: $mainBlueColor;
-  margin-top: 45px;
-  margin-left: 94px;
   padding: 13px 44px;
 }
 
@@ -38,4 +36,14 @@
 .button--submit {
   box-sizing: border-box;
   width: 270px;
+}
+
+@media (max-width: $tabletResolution) {
+  .button--consult {
+    box-sizing: border-box;
+    width: 379px;
+    height: 55px;
+    padding: 13px;
+    padding-top: 17px;
+  }
 }

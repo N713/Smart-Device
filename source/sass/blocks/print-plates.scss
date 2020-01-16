@@ -63,3 +63,44 @@
   top: 732px;
   left: 215px;
 }
+
+.print-plates__button {
+  margin-top: 45px;
+  margin-left: 94px;
+}
+
+@media (max-width: $tabletResolution) {
+  .print-plates {
+    width: 424px;
+    margin-left: 93px;
+    margin-right: auto;
+    padding-bottom: 163px;
+  }
+
+  .print-plates h2 {
+    width: 424px;
+    font-size: 60px;
+    line-height: 70px;
+    margin-top: 117px;
+  }
+
+  .print-plates p {
+    width: 356px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: lowercase;
+    padding-left: 46px;
+    margin-top: 28px;
+  }
+
+  .print-plates p::after {
+    width: 33px;
+    top: 18px;
+    left: -2px;
+  }
+
+  .print-plates__button {
+    margin-left: 46px;
+    margin-top: 54px;
+  }
+}

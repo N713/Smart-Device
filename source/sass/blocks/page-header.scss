@@ -55,7 +55,7 @@
 }
 
 .page-header__link--tel {
-  margin-left: 90px;
+  margin-left: 82px;
 }
 
 .page-header__link--tel svg {
@@ -69,4 +69,43 @@
 .page-header__button {
   margin-left: 50px;
   margin-bottom: 5px;
+}
+
+@media (max-width: $tabletResolution) {
+  .page-header {
+    box-sizing: border-box;
+    width: 750px;
+    padding: 0 15px;
+  }
+
+  .page-header__links-wrapper {
+    min-width: 100px;
+  }
+
+  .page-header__logo-text-wrapper {
+    margin-top: 5px;
+  }
+
+  .page-header__link p,
+  .page-header__button {
+    display: none;
+  }
+
+  .page-header__link svg {
+    margin: 0;
+  }
+
+  .page-header__link--tel {
+    margin-left: 27px;
+  }
+
+  .page-header__link--tel svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .page-header__link--mail svg {
+    width: 32px;
+    height: 21px;
+  }
 }

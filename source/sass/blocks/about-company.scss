@@ -42,6 +42,39 @@
   margin-top: 20px;
 }
 
+.about-company__tablet {
+  display: none;
+}
+
 .about-company__button {
   width: 180px;
+}
+
+@media (max-width: $tabletResolution) {
+  .about-company {
+    width: 750px;
+    margin: 0;
+    padding: 40px 5px 83px 210px;
+  }
+
+  .about-company::before {
+    left: 0;
+  }
+
+  .about-company h3 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .about-company p {
+    margin: 23px 3px 0;
+  }
+
+  .about-company__tablet {
+    display: block;
+  }
+
+  .about-company__desktop {
+    display: none;
+  }
 }
