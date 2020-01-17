@@ -1,0 +1,29 @@
+.site-list {
+  margin-top: 26px;
+  margin-right: 75px;
+}
+
+.site-list__item {
+  font-family: $ptMono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.site-list__link {
+  color: rgba(27, 45, 55, 0.5);
+}
+
+@media (max-width: $mobileResolution) {
+  .site-list {
+    margin-top: 0;
+    margin-right: 0;
+    padding-top: 5px;
+    padding-bottom: 28px;
+  }
+
+  .site-list__item {
+    width: 270px;
+  }
+}

@@ -1,6 +1,5 @@
 .site-parts-list {
-  margin-top: 26px;
-  margin-right: 75px;
+  display: flex;
 }
 
 .site-parts-list__wrapper {
@@ -38,25 +37,13 @@
   margin-top: 5px;
 }
 
-.site-parts-list__item {
-  font-family: $ptMono;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 25px;
-}
-
-.site-parts-list__link {
-  color: rgba(27, 45, 55, 0.5);
-}
-
 @media (max-width: $tabletResolution) {
   .site-parts-list {
     margin: 0;
     margin-top: 24px;
   }
 
-  .site-parts-list__wrapper:first-child .site-parts-list:last-child {
+  .site-parts-list__wrapper:first-child .site-list:last-child {
     margin-top: 0;
   }
 
@@ -81,14 +68,7 @@
 
 @media (max-width: $mobileResolution) {
   .site-parts-list {
-    margin-top: 0;
-    margin-right: 0;
-    padding-top: 5px;
-    padding-bottom: 28px;
-  }
-
-  .site-parts-list__item {
-    width: 270px;
+    flex-direction: column;
   }
 
   .site-parts-list__wrapper {
