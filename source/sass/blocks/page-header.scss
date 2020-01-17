@@ -12,6 +12,11 @@
 
   &:hover {
     cursor: pointer;
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
   }
 }
 
@@ -47,6 +52,11 @@
 
   &:hover {
     cursor: pointer;
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
   }
 }
 

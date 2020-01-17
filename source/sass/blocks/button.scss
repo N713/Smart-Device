@@ -13,6 +13,16 @@
   border: 1px solid $whiteColor;
   border-radius: 5px;
   padding: 13px 28px;
+
+  &:hover {
+    color: $mainBlueColor;
+    background-color: $whiteColor;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
 }
 
 .button--consult {
@@ -23,6 +33,15 @@
   background-color: $mainBlueColor;
   border-color: $mainBlueColor;
   padding: 13px 44px;
+
+  &:hover {
+    background-color: $whiteColor;
+    color: $mainBlueColor;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
 }
 
 .button--more {
@@ -31,6 +50,15 @@
   color: $mainBlueColor;
   border: 1px solid $mainBlueColor;
   margin-top: 40px;
+
+  &:hover {
+    color: $whiteColor;
+    background-color: $mainBlueColor;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 .button--submit {

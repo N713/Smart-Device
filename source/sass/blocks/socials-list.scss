@@ -6,6 +6,17 @@
   margin-left: -3px;
 }
 
+.socials-list__item {
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
 @media (max-width: $tabletResolution) {
   .socials-list {
     display: inline-flex;

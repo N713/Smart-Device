@@ -180,7 +180,9 @@
           </div>
           <div class="form__tel">
             <label class="visually-hidden" for="number">Номер телефона</label>
-            <input type="tel" id="number" placeholder="Телефон" required="">
+            <input type="tel" id="number" placeholder="Телефон" required=""
+                   pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                   maxlength="10">
           </div>
           <textarea id="question-field" required="">Ваш вопрос</textarea>
           <button class="form__submit button button--submit" type="submit">Задать вопрос</button>
@@ -314,11 +316,13 @@
       <h3>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</h3>
       <div class="modal__form-name">
         <label class="visually-hidden" for="name-first">Имя</label>
-        <input type="text" id="name-first" placeholder="Имя" required="">
+        <input type="text" id="name-first" placeholder="Имя" required="" autofocus>
       </div>
       <div class="modal__form-tel">
         <label class="visually-hidden" for="tel-number">Номер телефона</label>
-        <input type="tel" id="tel-number" placeholder="Телефон" required="">
+        <input type="tel" id="tel-number" placeholder="Телефон" required=""
+               pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+               maxlength="10">
       </div>
       <textarea id="question" rows="20" required="">Ваш вопрос</textarea>
       <button class="button" type="submit">Отправить</button>

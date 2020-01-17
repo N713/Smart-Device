@@ -23,6 +23,18 @@
   padding: 15px 0;
 }
 
+.copyright__container a {
+  
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
 .copyright__item:nth-child(2n) {
   margin-left: 75px;
 }
