@@ -54,7 +54,7 @@
   color: $whiteColor;
   box-sizing: border-box;
   width: 570px;
-  min-height: 154px;
+  height: 154px;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   margin-top: 40px;
@@ -79,14 +79,13 @@
 }
 
 .form__agreement input[type="checkbox"]:checked,
-.form__agreement input[type="checkbox"]:not(:checked),
-{
+.form__agreement input[type="checkbox"]:not(:checked) {
   position: absolute;
   left: -9999px;
 }
 
 .form__agreement input[type="checkbox"]:checked + label,
-.form__agreement input[type="checkbox"]:not(:checked) + label, {
+.form__agreement input[type="checkbox"]:not(:checked) + label {
   display: inline-block;
   position: relative;
   padding-left: 40px;
@@ -96,7 +95,7 @@
 }
 
 .form__agreement input[type="checkbox"]:checked + label:before,
-.form__agreement input[type="checkbox"]:not(:checked) + label:before, {
+.form__agreement input[type="checkbox"]:not(:checked) + label:before {
   content: "";
   position: absolute;
   left: 6px;
@@ -129,4 +128,69 @@
 
 .form__agreement input[type="checkbox"]:checked + label:after {
   opacity: 1;
+}
+
+@media (max-width: $tabletResolution) {
+  .form {
+    margin-top: 53px;
+  }
+
+  .form input {
+    width: 279.88px;
+    height: 51.83px;
+  }
+
+  .form textarea {
+    width: 590.85px;
+    height: 159.63px;
+  }
+
+  .form__submit {
+    margin-top: 4px;
+  }
+
+  .form__agreement input[type="checkbox"]:checked + label:before,
+  .form__agreement input[type="checkbox"]:not(:checked) + label:before {
+    left: -2px;
+    top: 13px;
+  }
+
+  .form__agreement input[type="checkbox"]:checked + label:after,
+  .form__agreement input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 17px;
+  }
+
+  .form__agreement input[type="checkbox"]:checked + label,
+  .form__agreement input[type="checkbox"]:not(:checked) + label {
+    padding-left: 32px;
+  }
+}
+
+@media (max-width: $mobileResolution) {
+  .form {
+    box-sizing: border-box;
+    width: 320px;
+    flex-direction: column;
+    margin-top: 21px;
+  }
+
+  .form input,
+  .form textarea {
+    width: 290px;
+  }
+
+  .form textarea {
+    height: 104px;
+    margin-top: 30px;
+    margin-bottom: 27px;
+  }
+
+  .form__name {
+    margin-bottom: 32px;
+  }
+
+  .form__agreement {
+    margin-top: 20px;
+  }
 }

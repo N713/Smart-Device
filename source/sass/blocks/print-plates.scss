@@ -69,6 +69,10 @@
   margin-left: 94px;
 }
 
+.print-plates__button span:last-child {
+  display: none;
+}
+
 @media (max-width: $tabletResolution) {
   .print-plates {
     width: 424px;
@@ -102,5 +106,48 @@
   .print-plates__button {
     margin-left: 46px;
     margin-top: 54px;
+  }
+}
+
+@media (max-width: $mobileResolution) {
+  .print-plates {
+    box-sizing: border-box;
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-bottom: 71px;
+  }
+
+  .print-plates h2 {
+    width: 220px;
+    font-size: 40px;
+    line-height: 47px;
+    margin-top: 229px;
+    margin-left: 1px;
+  }
+
+  .print-plates p {
+    font-size: 16px;
+    line-height: 25px;
+    width: 245px;
+    padding-left: 50px;
+  }
+
+  .print-plates p::after {
+    left: 3px;
+    top: 14px;
+  }
+
+  .print-plates__button {
+    margin-left: 3px;
+    margin-top: 38px;
+  }
+
+  .print-plates__button span:first-child {
+    display: none;
+  }
+
+  .print-plates__button span:last-child {
+    display: inline-block;
   }
 }

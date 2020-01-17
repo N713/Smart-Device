@@ -109,3 +109,26 @@
     height: 21px;
   }
 }
+
+@media (max-width: $mobileResolution) {
+  .page-header {
+    width: 320px;
+  }
+
+  .page-header__logo-link svg {
+    width: 140px;
+    height: 42px;
+  }
+
+  .page-header__logo-link svg g {
+    display: none;
+  }
+
+  .page-header__links-wrapper {
+    width: 75px;
+  }
+
+  .page-header__link--tel {
+    margin-left: 20px;
+  }
+}

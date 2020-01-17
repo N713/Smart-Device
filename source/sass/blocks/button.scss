@@ -46,4 +46,20 @@
     padding: 13px;
     padding-top: 17px;
   }
+
+  .button--submit {
+    width: 279.88px;
+    height: 46.65px;
+  }
+}
+
+@media (max-width: $mobileResolution) {
+  .button--consult {
+    width: 287px;
+    height: 55px;
+  }
+
+  .button--submit {
+    width: 290px;
+  }
 }

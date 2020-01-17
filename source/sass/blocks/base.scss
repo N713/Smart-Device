@@ -2,4 +2,5 @@ body {
   font-family: $robotoRegular;
 
   @include reset;
+  margin: 0 auto;
 }

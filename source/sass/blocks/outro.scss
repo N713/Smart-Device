@@ -1,8 +1,47 @@
 .outro {
+  box-sizing: border-box;
   width: 1411px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 65px;
   padding-bottom: 57px;
+}
+
+.outro__wrapper {
+  width: 990px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: $tabletResolution) {
+  .outro {
+    width: 770px;
+    flex-direction: column;
+    padding: 19px 25px;
+    padding-bottom: 36px;
+  }
+
+  .outro__wrapper {
+    width: auto;
+    justify-content: space-between;
+    margin-top: 38px;
+    padding-top: 26px;
+  }
+}
+
+@media (max-width: $mobileResolution) {
+  .outro {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0;
+  }
+
+  .outro__wrapper {
+    flex-direction: column;
+
+    @include reset;
+  }
 }

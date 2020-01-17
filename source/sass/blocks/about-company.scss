@@ -13,13 +13,11 @@
   color: #666666;
 }
 
-.about-company::before {
-  content: url("../img/2005@1x.png");
-  display: inline-block;
-  width: 170px;
-  height: 317px;
+.about-company img {
   position: absolute;
-  left: -30px;
+  left: -28px;
+  width: 220px;
+  height: 317px;
 }
 
 .about-company h3 {
@@ -54,10 +52,12 @@
   .about-company {
     width: 750px;
     margin: 0;
-    padding: 40px 5px 83px 210px;
+    padding: 21px 5px 83px 210px;
   }
 
-  .about-company::before {
+  .about-company img {
+    height: 361.79px;
+    width: 251.08px;
     left: 0;
   }
 
@@ -76,5 +76,41 @@
 
   .about-company__desktop {
     display: none;
+  }
+
+  .about-company__button {
+    margin-left: 2px;
+  }
+}
+
+@media (max-width: $mobileResolution) {
+  .about-company {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 38px;
+    padding-bottom: 66px;
+  }
+
+  .about-company h3 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .about-company img {
+    display: none;
+  }
+
+  .about-company p {
+    width: 288px;
+    margin-top: 21px;
+  }
+
+  .about-company .about-company__tablet {
+    margin-top: 40px;
+  }
+
+  .about-company__button {
+    margin-top: 28px;
   }
 }

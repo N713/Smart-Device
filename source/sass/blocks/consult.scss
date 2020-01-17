@@ -44,3 +44,61 @@
   line-height: 22px;
   margin-top: 7px;
 }
+
+@media (max-width: $tabletResolution) {
+  .consult {
+    background-image: none;
+    padding-bottom: 104px;
+  }
+
+  .consult__wrapper {
+    box-sizing: border-box;
+    min-width: 770px;
+    padding-left: 92.15px;
+    padding-right: 87px;
+  }
+
+  .consult__wrapper-second {
+    width: auto;
+  }
+
+  .consult h3 {
+    font-size: 32px;
+    line-height: 45px;
+    margin-top: 80px;
+  }
+
+  .consult p {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: $mobileResolution) {
+  .consult {
+    padding-bottom: 40px;
+  }
+
+  .consult__wrapper {
+    min-width: 320px;
+    padding: 0 15px;
+  }
+
+  .consult__wrapper-second {
+    margin: 0 auto;
+  }
+
+  .consult h3 {
+    width: 243px;
+    font-size: 28px;
+    line-height: 39px;
+    margin-right: 0;
+    margin-top: 29px;
+  }
+
+  .consult p {
+    width: 269px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: 0;
+  }
+}

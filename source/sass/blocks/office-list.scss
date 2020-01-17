@@ -32,3 +32,32 @@
 .office-list__link {
   color: #1B2D37;
 }
+
+@media (max-width: $tabletResolution) {
+  .office-list {
+    margin-top: 25px;
+  }
+
+  .office-list__wrapper {
+    width: 333px;
+    margin-right: 12px;
+  }
+
+  .office-list__wrapper h5 {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: $mobileResolution) {
+  .office-list {
+    margin-top: 31px;
+  }
+
+  .office-list__wrapper {
+    width: auto;
+    margin-right: 0;
+    padding-top: 28px;
+    padding-right: 12px;
+    border-top: 1px solid rgba(98, 105, 98, 0.2);
+  }
+}

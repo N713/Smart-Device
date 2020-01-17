@@ -13,6 +13,14 @@
   .intro {
     padding-top: 20px;
     background-size: 465px 340px, 1490px 700px;
-    background-position: top 110px right -203px,top -135px right -365px;
+    background-position: top 110px right -203px, top -135px right -365px;
+  }
+}
+
+@media (max-width: $mobileResolution) {
+  .intro {
+    padding-top: 15px;
+    background-size: 301px 220px,1490px 668px;
+    background-position: top 90px left 30px,top -139px right -520px;
   }
 }

@@ -5,3 +5,16 @@
   margin-top: 40px;
   margin-left: -3px;
 }
+
+@media (max-width: $tabletResolution) {
+  .socials-list {
+    margin: 0;
+  }
+}
+
+@media (max-width: $mobileResolution) {
+  .socials-list {
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+}
