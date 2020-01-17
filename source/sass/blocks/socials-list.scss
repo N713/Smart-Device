@@ -2,12 +2,13 @@
   display: flex;
   width: 112px;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 54px;
   margin-left: -3px;
 }
 
 @media (max-width: $tabletResolution) {
   .socials-list {
+    display: inline-flex;
     margin: 0;
   }
 }

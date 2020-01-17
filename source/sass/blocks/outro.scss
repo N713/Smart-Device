@@ -6,7 +6,6 @@
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 65px;
-  padding-bottom: 57px;
 }
 
 .outro__wrapper {
@@ -19,15 +18,16 @@
   .outro {
     width: 770px;
     flex-direction: column;
-    padding: 19px 25px;
-    padding-bottom: 36px;
+    padding: 19px 0;
+    padding-bottom: 0;
   }
 
   .outro__wrapper {
-    width: auto;
+    width: 100%;
     justify-content: space-between;
     margin-top: 38px;
-    padding-top: 26px;
+    padding-bottom: 38px;
+    border-bottom: 1px solid rgba(98, 105, 98, 0.2);
   }
 }
 
@@ -36,7 +36,6 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    padding-bottom: 0;
   }
 
   .outro__wrapper {
