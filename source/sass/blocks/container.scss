@@ -3,4 +3,8 @@
   background-image: url("../img/plate-desktop-mask@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/plate-desktop-mask@2x.png");
+  }
 }
