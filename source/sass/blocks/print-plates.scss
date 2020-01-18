@@ -17,6 +17,7 @@
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
+
   @include reset;
   margin-top: 231px;
   margin-left: -5px;
@@ -64,7 +65,8 @@
   left: 215px;
 
   &:hover {
-    opacity: 0.5;
+    opacity: 0.4;
+    cursor: pointer;
   }
 
   &:active {
