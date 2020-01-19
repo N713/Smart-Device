@@ -52,6 +52,12 @@ const scroll = (element) => {
   element.scrollIntoView({block: `start`, behavior: 'smooth'});
 };
 
+const showSitePartsLists = () => {
+  sitePartsLists.forEach((list) => {
+    list.classList.remove(`visually-hidden`);
+  });
+};
+
 buttonOrderCall.addEventListener(`click`, (evt) => {
   evt.stopPropagation();
 
@@ -102,9 +108,7 @@ partsListCloseIcon.addEventListener(`click`, () => {
       if(partsListCloseIcon.classList.contains(`visually-hidden`)) {
         partsListOpenIcon.classList.add(`visually-hidden`);
         partsListCloseIcon.classList.remove(`visually-hidden`);
-        sitePartsLists.forEach((list) => {
-          list.classList.remove(`visually-hidden`);
-        });
+        showSitePartsLists();
       }
     });
   }
@@ -134,11 +138,9 @@ window.addEventListener(`resize`, (evt) => {
   }
 
   if(window.innerWidth > TABLET_WIDTH && sitePartsLists[0].classList.contains(`visually-hidden`)) {
-    sitePartsLists.forEach((list) => {
-      list.classList.remove(`visually-hidden`);
-    });
     partsListOpenIcon.classList.add(`visually-hidden`);
     partsListCloseIcon.classList.remove(`visually-hidden`);
+    showSitePartsLists();
   }
 });
 
