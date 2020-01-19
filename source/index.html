@@ -205,7 +205,7 @@
           </div>
           <div class="form__tel">
             <label class="visually-hidden" for="number">Номер телефона</label>
-            <input type="tel" id="number" placeholder="Телефон" required="" maxlength="10">
+            <input type="tel" id="number" placeholder="Телефон" required="" maxlength="18">
           </div>
           <textarea id="question-field" required="">Ваш вопрос</textarea>
           <button class="form__submit button button--submit" type="submit">Задать вопрос</button>
@@ -357,7 +357,7 @@
       </div>
       <div class="modal__form-tel">
         <label class="visually-hidden" for="tel-number">Номер телефона</label>
-        <input type="tel" id="tel-number" placeholder="Телефон" required="" maxlength="10">
+        <input type="tel" id="tel-number" placeholder="Телефон" required="" maxlength="18">
       </div>
       <textarea id="question" rows="20" required="">Ваш вопрос</textarea>
       <button class="button" type="submit">Отправить</button>
@@ -369,6 +369,8 @@
       </div>
     </form>
   </div>
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/main.js"></script>
+  <script src="js/mask.js"></script>
 </body>
 </html>

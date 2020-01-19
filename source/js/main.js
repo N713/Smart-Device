@@ -3,6 +3,7 @@
 const body = document.querySelector(`body`);
 const modal = document.querySelector(`.modal`);
 const form = modal.querySelector(`.modal__form`);
+const consultForm = body.querySelector(`.consult .form`);
 const container = document.querySelector(`.container`);
 const buttonOrderCall = body.querySelector(`.page-header__button`);
 const modalCloseButton = modal.querySelector(`.modal__close`);
@@ -10,6 +11,10 @@ const modalCloseButton = modal.querySelector(`.modal__close`);
 const nameInput = form.querySelector(`.modal__form-name input`);
 const telInput = form.querySelector(`.modal__form-tel input`);
 const textarea = form.querySelector(`textarea`);
+
+const consultName = consultForm.querySelector(`.form__name input`);
+const consultTel = consultForm.querySelector(`.form__tel input`);
+const consultTextarea = consultForm.querySelector(`textarea`);
 
 const getFreeConsultButton = container.querySelector(`.print-plates__button`);
 const scrollDown = container.querySelector(`.print-plates__link`);
@@ -86,6 +91,14 @@ form.addEventListener(`submit`, (evt) => {
   localStorage.setItem(`question`, textarea.value);
 });
 
+consultForm.addEventListener(`submit`, (evt) => {
+  evt.preventDefault();
+
+  localStorage.setItem(`name`, consultName.value);
+  localStorage.setItem(`tel`, consultTel.value);
+  localStorage.setItem(`question`, consultTextarea.value);
+});
+
 scrollDown.addEventListener(`click`, (evt) => {
   evt.preventDefault();
   scroll(features);
@@ -146,4 +159,8 @@ window.addEventListener(`resize`, (evt) => {
 
 telInput.addEventListener(`focus`, () => {
   telInput.placeholder = `+7(`;
+});
+
+consultTel.addEventListener(`focus`, () => {
+  consultTel.placeholder = `+7(`;
 });
