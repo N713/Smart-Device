@@ -272,7 +272,13 @@
           <div class="site-parts-list__wrapper">
             <div class="site-parts-list__wrapper-second">
               <h5>Разделы сайта</h5>
-              <ul class="site-list list">
+              <svg width="16" height="16" class="js-plus-parts visually-hidden">
+                <use xlink:href="img/sprite.svg#icon-plus"></use>
+              </svg>
+              <svg width="16" height="16" class="js-minus-parts visually-hidden">
+                <use xlink:href="img/sprite.svg#icon-minus"></use>
+              </svg>
+              <ul class="site-list list js-parts-list">
                 <li class="site-list__item list__item">
                   <a class="site-list__link list__link" href="#">О компании</a>
                 </li>
@@ -286,7 +292,7 @@
                   <a class="site-list__link list__link" href="#">Монтаж печатных плат</a>
                 </li>
               </ul>
-              <ul class="site-list list">
+              <ul class="site-list list js-parts-list">
                 <li class="site-list__item list__item">
                   <a class="site-list__link list__link" href="#">Комплектующие</a>
                 </li>
@@ -302,7 +308,13 @@
           <div class="site-parts-list__wrapper">
             <div class="site-parts-list__wrapper-second">
               <h5>Наш офис</h5>
-              <ul class="site-list list">
+              <svg width="16" height="16" class="js-plus-office visually-hidden">
+                <use xlink:href="img/sprite.svg#icon-plus"></use>
+              </svg>
+              <svg width="16" height="16" class="js-minus-office visually-hidden">
+                <use xlink:href="img/sprite.svg#icon-minus"></use>
+              </svg>
+              <ul class="site-list list js-office-list">
                 <li class="site-list__item list__item">
                   <a class="site-list__link list__link" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
                 </li>
@@ -341,7 +353,7 @@
       <h3>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</h3>
       <div class="modal__form-name">
         <label class="visually-hidden" for="name-first">Имя</label>
-        <input type="text" id="name-first" placeholder="Имя" required="" autofocus>
+        <input type="text" id="name-first" placeholder="Имя" required="">
       </div>
       <div class="modal__form-tel">
         <label class="visually-hidden" for="tel-number">Номер телефона</label>

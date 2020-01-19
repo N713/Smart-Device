@@ -37,6 +37,10 @@
   margin-top: 5px;
 }
 
+.site-parts-list__wrapper svg {
+  display: none;
+}
+
 @media (max-width: $tabletResolution) {
   .site-parts-list {
     margin: 0;
@@ -83,10 +87,28 @@
     width: 320px;
     margin: 0 auto;
     padding: 0 15px;
+    position: relative;
   }
 
   .site-parts-list__wrapper h5 {
+    position: relative;
     margin-top: 34px;
     margin-bottom: 25px;
+  }
+
+  .site-parts-list__wrapper svg {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 30px;
+
+    &:hover {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
   }
 }
