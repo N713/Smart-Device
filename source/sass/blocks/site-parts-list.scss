@@ -73,6 +73,7 @@
 @media (max-width: $mobileResolution) {
   .site-parts-list {
     flex-direction: column;
+    margin-top: 0;
   }
 
   .site-parts-list__wrapper {
