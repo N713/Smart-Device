@@ -1,11 +1,3 @@
-.features__wrapper {
-  padding-top: 1px;
-  background-image: url("../img/dotted-triangle-to-left.svg"), url("../img/dotted-triangle-to-right.svg"),
-    url("../img/triangle-to-left.svg"), url("../img/triangle-to-right.svg");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: bottom 65px left -183px, top 163px right 490px, top 60px left 200px, top 475px right 28px;
-}
-
 .features__list {
   width: 1170px;
   display: flex;
@@ -70,11 +62,6 @@
 }
 
 @media (max-width: $tabletResolution) {
-  .features__wrapper {
-    background-image: url("../img/dotted-triangle-to-right.svg");
-    background-position: bottom 180px right -100px;
-  }
-
   .features__list {
     width: 750px;
     margin-top: 54px;
