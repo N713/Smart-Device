@@ -25,6 +25,7 @@ const officeListCloseIcon = siteList.querySelector(`.js-minus-office`);
 const officeList = siteList.querySelector(`.js-office-list`);
 
 const ESC_KEYCODE = 27;
+const TABLET_WIDTH = 767;
 
 partsListCloseIcon.classList.remove(`visually-hidden`);
 officeListCloseIcon.classList.remove(`visually-hidden`);
@@ -126,17 +127,21 @@ officeListCloseIcon.addEventListener(`click`, () => {
 });
 
 window.addEventListener(`resize`, (evt) => {
-  if(window.innerWidth > 767 && officeList.classList.contains(`visually-hidden`)) {
+  if(window.innerWidth > TABLET_WIDTH && officeList.classList.contains(`visually-hidden`)) {
     officeList.classList.remove(`visually-hidden`);
     officeListOpenIcon.classList.add(`visually-hidden`);
     officeListCloseIcon.classList.remove(`visually-hidden`);
   }
 
-  if(window.innerWidth > 767 && sitePartsLists[0].classList.contains(`visually-hidden`)) {
+  if(window.innerWidth > TABLET_WIDTH && sitePartsLists[0].classList.contains(`visually-hidden`)) {
     sitePartsLists.forEach((list) => {
       list.classList.remove(`visually-hidden`);
     });
     partsListOpenIcon.classList.add(`visually-hidden`);
     partsListCloseIcon.classList.remove(`visually-hidden`);
   }
+});
+
+telInput.addEventListener(`focus`, () => {
+  telInput.placeholder = `+7(`;
 });
