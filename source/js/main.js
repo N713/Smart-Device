@@ -1,89 +1,89 @@
 'use strict';
 
-const body = document.querySelector(`body`);
-const modal = document.querySelector(`.modal`);
-const form = modal.querySelector(`.modal__form`);
-const consultForm = body.querySelector(`.consult .form`);
-const container = document.querySelector(`.container`);
-const buttonOrderCall = body.querySelector(`.page-header__button`);
-const modalCloseButton = modal.querySelector(`.modal__close`);
+var body = document.querySelector(`body`);
+var modal = document.querySelector(`.modal`);
+var form = modal.querySelector(`.modal__form`);
+var consultForm = body.querySelector(`.consult .form`);
+var container = document.querySelector(`.container`);
+var buttonOrderCall = body.querySelector(`.page-header__button`);
+var modalCloseButton = modal.querySelector(`.modal__close`);
 
-const nameInput = form.querySelector(`.modal__form-name input`);
-const telInput = form.querySelector(`.modal__form-tel input`);
-const textarea = form.querySelector(`textarea`);
+var textarea = form.querySelector(`textarea`);
+var nameInput = form.querySelector(`#name-first`);
 
-const consultName = consultForm.querySelector(`.form__name input`);
-const consultTel = consultForm.querySelector(`.form__tel input`);
-const consultTextarea = consultForm.querySelector(`textarea`);
+var consultName = consultForm.querySelector(`.form__name input`);
+var consultTel = consultForm.querySelector(`.form__tel input`);
+var consultTextarea = consultForm.querySelector(`textarea`);
 
-const getFreeConsultButton = container.querySelector(`.print-plates__button`);
-const scrollDown = container.querySelector(`.print-plates__link`);
-const consultSection = body.querySelector(`.consult__wrapper`);
-const features = body.querySelector(`.features`);
+var getFreeConsultButton = container.querySelector(`.print-plates__button`);
+var scrollDown = container.querySelector(`.print-plates__link`);
+var consultSection = body.querySelector(`.consult__wrapper`);
+var features = body.querySelector(`.features`);
 
-const siteList = document.querySelector(`.site-parts-list`);
-const partsListOpenIcon = siteList.querySelector(`.js-plus-parts`);
-const partsListCloseIcon = siteList.querySelector(`.js-minus-parts`);
-const sitePartsLists = siteList.querySelectorAll(`.js-parts-list`);
-const officeListOpenIcon = siteList.querySelector(`.js-plus-office`);
-const officeListCloseIcon = siteList.querySelector(`.js-minus-office`);
-const officeList = siteList.querySelector(`.js-office-list`);
+var siteList = document.querySelector(`.site-parts-list`);
+var partsListOpenIcon = siteList.querySelector(`.js-plus-parts`);
+var partsListCloseIcon = siteList.querySelector(`.js-minus-parts`);
+var sitePartsLists = siteList.querySelectorAll(`.js-parts-list`);
+var officeListOpenIcon = siteList.querySelector(`.js-plus-office`);
+var officeListCloseIcon = siteList.querySelector(`.js-minus-office`);
+var officeList = siteList.querySelector(`.js-office-list`);
 
-const ESC_KEYCODE = 27;
-const TABLET_WIDTH = 767;
+var ESC_KEYCODE = 27;
+var TABLET_WIDTH = 768;
+var CATCH_TABLET = window.matchMedia("(min-width:" + TABLET_WIDTH + "px)");
 
 partsListCloseIcon.classList.remove(`visually-hidden`);
 officeListCloseIcon.classList.remove(`visually-hidden`);
 
-const closeModal = () => {
+var closeModal = function() {
   modal.classList.add(`hide`);
+  body.classList.remove(`body--background-black`);
+  body.classList.add(`body`);
+  container.classList.remove(`container--half-opacity`);
 
   document.removeEventListener(`click`, closeModal);
   document.removeEventListener(`keydown`, closeModal);
-
-  body.style.backgroundColor = `transparent`;
-  container.style.opacity = `1`;
 };
 
-const openModal = () => {
+var openModal = function() {
   modal.classList.remove(`hide`);
+  body.classList.add(`body--background-black`);
+  container.classList.add(`container--half-opacity`);
 
   nameInput.focus();
-  body.style.backgroundColor = `black`;
-  container.style.opacity = `0.5`;
 };
 
-const scroll = (element) => {
+var scroll = function(element) {
   element.scrollIntoView({block: `start`, behavior: 'smooth'});
 };
 
-const showSitePartsLists = () => {
+var showSitePartsLists = function () {
   sitePartsLists.forEach((list) => {
     list.classList.remove(`visually-hidden`);
   });
 };
 
-buttonOrderCall.addEventListener(`click`, (evt) => {
+buttonOrderCall.addEventListener(`click`, function(evt){
   evt.stopPropagation();
 
   if (modal.classList.contains(`hide`)) {
     openModal();
     modalCloseButton.addEventListener(`click`, closeModal);
 
-    document.addEventListener(`keydown`, (evt) => {
+    document.addEventListener(`keydown`, function(evt) {
       if (evt.keyCode === ESC_KEYCODE) {
         closeModal();
       }
     });
 
-    container.addEventListener(`click`, (evt) => {
+    container.addEventListener(`click`, function(evt) {
       evt.stopPropagation();
       closeModal();
     });
   }
 });
 
-form.addEventListener(`submit`, (evt) => {
+form.addEventListener(`submit`, function(evt) {
   evt.preventDefault();
 
   localStorage.setItem(`name`, nameInput.value);
@@ -91,7 +91,7 @@ form.addEventListener(`submit`, (evt) => {
   localStorage.setItem(`question`, textarea.value);
 });
 
-consultForm.addEventListener(`submit`, (evt) => {
+consultForm.addEventListener(`submit`, function(evt) {
   evt.preventDefault();
 
   localStorage.setItem(`name`, consultName.value);
@@ -99,17 +99,17 @@ consultForm.addEventListener(`submit`, (evt) => {
   localStorage.setItem(`question`, consultTextarea.value);
 });
 
-scrollDown.addEventListener(`click`, (evt) => {
+scrollDown.addEventListener(`click`, function(evt) {
   evt.preventDefault();
   scroll(features);
 });
 
-getFreeConsultButton.addEventListener(`click`, (evt) => {
+getFreeConsultButton.addEventListener(`click`, function(evt) {
   evt.preventDefault();
   scroll(consultSection);
 });
 
-partsListCloseIcon.addEventListener(`click`, () => {
+partsListCloseIcon.addEventListener(`click`, function() {
   if(partsListOpenIcon.classList.contains(`visually-hidden`)) {
     partsListCloseIcon.classList.add(`visually-hidden`);
     partsListOpenIcon.classList.remove(`visually-hidden`);
@@ -117,7 +117,7 @@ partsListCloseIcon.addEventListener(`click`, () => {
       list.classList.add(`visually-hidden`);
     });
 
-    partsListOpenIcon.addEventListener(`click`, () => {
+    partsListOpenIcon.addEventListener(`click`, function() {
       if(partsListCloseIcon.classList.contains(`visually-hidden`)) {
         partsListOpenIcon.classList.add(`visually-hidden`);
         partsListCloseIcon.classList.remove(`visually-hidden`);
@@ -127,13 +127,13 @@ partsListCloseIcon.addEventListener(`click`, () => {
   }
 });
 
-officeListCloseIcon.addEventListener(`click`, () => {
+officeListCloseIcon.addEventListener(`click`, function() {
   if(officeListOpenIcon.classList.contains(`visually-hidden`)) {
     officeListCloseIcon.classList.add(`visually-hidden`);
     officeListOpenIcon.classList.remove(`visually-hidden`);
     officeList.classList.add(`visually-hidden`);
 
-    officeListOpenIcon.addEventListener(`click`, () => {
+    officeListOpenIcon.addEventListener(`click`, function() {
       if(officeListCloseIcon.classList.contains(`visually-hidden`)) {
         officeListOpenIcon.classList.add(`visually-hidden`);
         officeListCloseIcon.classList.remove(`visually-hidden`);
@@ -143,24 +143,16 @@ officeListCloseIcon.addEventListener(`click`, () => {
   }
 });
 
-window.addEventListener(`resize`, (evt) => {
-  if(window.innerWidth > TABLET_WIDTH && officeList.classList.contains(`visually-hidden`)) {
+window.addEventListener(`resize`, function(evt) {
+  if(CATCH_TABLET.matches && officeList.classList.contains(`visually-hidden`)) {
     officeList.classList.remove(`visually-hidden`);
     officeListOpenIcon.classList.add(`visually-hidden`);
     officeListCloseIcon.classList.remove(`visually-hidden`);
   }
 
-  if(window.innerWidth > TABLET_WIDTH && sitePartsLists[0].classList.contains(`visually-hidden`)) {
+  if(CATCH_TABLET.matches && sitePartsLists[0].classList.contains(`visually-hidden`)) {
     partsListOpenIcon.classList.add(`visually-hidden`);
     partsListCloseIcon.classList.remove(`visually-hidden`);
     showSitePartsLists();
   }
-});
-
-telInput.addEventListener(`focus`, () => {
-  telInput.placeholder = `+7(`;
-});
-
-consultTel.addEventListener(`focus`, () => {
-  consultTel.placeholder = `+7(`;
 });

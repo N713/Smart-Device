@@ -1,10 +1,12 @@
 .modal {
-  position: absolute;
-  top: 136px;
-  left: 37.24%;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
   box-sizing: border-box;
   width: 490px;
   margin: 0 auto;
+  margin-top: -245px;
   color: $whiteColor;
   padding: 33px 39.2px;
 }
@@ -16,11 +18,23 @@
   background-color: $mainBlueColor;
 }
 
-.modal svg {
+.modal__close {
   display: block;
+  box-sizing: border-box;
   position: absolute;
   top: 20px;
   right: 20.44px;
+  width: 17px;
+  height: 17px;
+  background-color: transparent;
+  border: none;
+}
+
+.modal svg {
+  display: block;
+  position: relative;
+  top: -2px;
+  left: -8px;
   width: 17px;
   height: 17px;
 
@@ -45,6 +59,7 @@
   font-weight: normal;
   font-size: 28px;
   line-height: 39px;
+  margin-bottom: 14px;
 }
 
 .modal__form h3 {
@@ -53,7 +68,6 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  margin-top: 14px;
   margin-bottom: 35px;
 }
 
@@ -69,13 +83,54 @@
   color: $whiteColor;
   line-height: 22px;
   padding: 14.5px 24.13px;
+}
+
+.modal__form-input-wrapper,
+.modal__form textarea {
   margin-bottom: 30px;
+}
+
+.modal__form ::-webkit-input-placeholder {
+  color: $whiteColor;
+  font-family: $ptMono;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal__form ::-moz-placeholder {
+  color: $whiteColor;
+  font-family: $ptMono;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal__form :-moz-placeholder {
+  color: $whiteColor;
+  font-family: $ptMono;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal__form :-ms-input-placeholder {
+  color: $whiteColor;
+  font-family: $ptMono;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .modal__form input {
   box-sizing: border-box;
   height: 51.8px;
   padding-top: 13.49px;
+
+  &:hover {
+    cursor: pointer;
+    outline: 1px solid midnightblue;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .modal__form textarea {
@@ -84,16 +139,25 @@
   width: 411.4px;
   height: 104px;
   color: $whiteColor;
+
+  &:hover {
+    cursor: pointer;
+    outline: 1px solid midnightblue;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
-.modal__form-agreement {
-  margin-top: 24px;
+.modal__form button {
+  margin-bottom: 34px;
 }
 
-.modal__form-agreement span {
+.modal__form-submit-checkbox label {
   display: inline-block;
   box-sizing: border-box;
-  width: 337.66px;
+  width: 350px;
   font-family: $ptMono;
   font-style: normal;
   font-weight: normal;
@@ -102,17 +166,19 @@
   opacity: 0.8;
 
   @include reset;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
 }
 
-.modal__form-agreement input[type="checkbox"]:checked,
-.modal__form-agreement input[type="checkbox"]:not(:checked),
-{
-  position: absolute;
-  left: -9999px;
-}
-
-.modal__form-agreement input[type="checkbox"]:checked + label,
-.modal__form-agreement input[type="checkbox"]:not(:checked) + label, {
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label, {
   display: inline-block;
   position: relative;
   padding-left: 40px;
@@ -121,8 +187,8 @@
   cursor: pointer;
 }
 
-.modal__form-agreement input[type="checkbox"]:checked + label:before,
-.modal__form-agreement input[type="checkbox"]:not(:checked) + label:before, {
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before, {
   content: "";
   position: absolute;
   left: 0;
@@ -132,14 +198,14 @@
   border: 1px solid $whiteColor;
 }
 
-.modal__form-agreement input[type="checkbox"]:checked + label:after,
-.modal__form-agreement input[type="checkbox"]:not(:checked) + label:after {
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
   content: "";
   position: absolute;
 }
 
-.modal__form-agreement input[type="checkbox"]:checked + label:after,
-.modal__form-agreement input[type="checkbox"]:not(:checked) + label:after {
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
   left: 5px;
   top: 15px;
   width: 7.5px;
@@ -149,10 +215,10 @@
   transform: rotate(-45deg);
 }
 
-.modal__form-agreement input[type="checkbox"]:not(:checked) + label:after {
+input[type="checkbox"]:not(:checked) + label:after {
   opacity: 0;
 }
 
-.modal__form-agreement input[type="checkbox"]:checked + label:after {
+input[type="checkbox"]:checked + label:after {
   opacity: 1;
 }

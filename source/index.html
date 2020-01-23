@@ -7,6 +7,19 @@
   <link rel="preload" href="fonts/ptmonoregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/robotocondensedregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* Mobile layout by default */
+      /*background-image: url( "../img/Smart Device.jpg" );
+      opacity: 0.5;
+    }
+  </style>
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
   <script>
     document.createElement( "picture" );
   </script>
@@ -39,12 +52,14 @@
         </a>
         <div class="page-header__links-wrapper">
           <a class="page-header__link page-header__link--mail" href="mailto:info@sd.ru">
+            <span class="visually-hidden">Почта</span>
             <svg width="26" height="16" viewBox="0 0 20 16">
               <use xlink:href="img/sprite.svg#icon-mail"></use>
             </svg>
             <p>info@sd.ru</p>
           </a>
           <a class="page-header__link page-header__link--tel" href="tel:+74950005252">
+            <span class="visually-hidden">Телефон</span>
             <svg width="24" height="20" viewBox="0 0 20 20">
               <use xlink:href="img/sprite.svg#icon-phone"></use>
             </svg>
@@ -128,21 +143,16 @@
       </ul>
     </section>
     <section class="about-company">
-      <img src="img/2005.svg" width="244" height="362" alt="2005">
       <h2>О компании</h2>
       <p>
         Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года.
         Выполняем срочные заказы и пилотные образцы до 10 дней.
       </p>
-      <p class="about-company__desktop">
+      <p>
         Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
         Печатные платы и комплектующие Service Devices применяются на предприятиях
-        Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
-        Среди наших клиентов крупнейшие Производители светотехники России.
-      </p>
-      <p class="about-company__tablet">
-        Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-        Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог..
+        Российских Железных Дорог <span class="about-company__dots">..</span><span>(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
+        Среди наших клиентов крупнейшие Производители светотехники России.</span>
       </p>
       <a href="#" class="about-company__button button button--more">Подробнее</a>
     </section>
@@ -199,21 +209,20 @@
         <h3>Остались вопросы? Задайте их нам!</h3>
         <p>Мы проконсультируем Вас бесплатно</p>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__name">
+          <div class="form__input-wrapper">
             <label class="visually-hidden" for="first-name">Имя</label>
-            <input type="text" id="first-name" placeholder="Имя" required="">
+            <input type="text" id="first-name" placeholder="Имя" required>
           </div>
-          <div class="form__tel">
+          <div class="form__input-wrapper">
             <label class="visually-hidden" for="number">Номер телефона</label>
-            <input type="tel" id="number" placeholder="Телефон" required="" maxlength="18">
+            <input type="tel" id="number" placeholder="Телефон" required maxlength="18" data-mask="+7(000)000 00 00">
           </div>
-          <textarea id="question-field" required="">Ваш вопрос</textarea>
+          <label class="visually-hidden" for="question-field">Задайте ваш вопрос</label>
+          <textarea id="question-field" required placeholder="Ваш вопрос"></textarea>
           <button class="form__submit button button--submit" type="submit">Задать вопрос</button>
-          <div class="form__agreement">
-            <input type="checkbox" id="personal-agreement" checked="">
-            <label for="personal-agreement">
-              <span>Я согласен на обработку персональных данных</span>
-            </label>
+          <div class="form__submit-checkbox">
+            <input class="visually-hidden" type="checkbox" id="personal-agreement">
+            <label for="personal-agreement">Я согласен на обработку персональных данных</label>
           </div>
         </form>
       </div>
@@ -245,6 +254,7 @@
           <ul class="socials-list list">
             <li class="socials-list__item">
               <a class="socials-list__link">
+                <span class="visually-hidden">Ссылка Фэйсбук</span>
                 <svg width="27" height="27">
                   <use xlink:href="img/sprite.svg#icon-facebook"></use>
                 </svg>
@@ -252,6 +262,7 @@
             </li>
             <li class="socials-list__item">
               <a class="socials-list__link">
+                <span class="visually-hidden">Ссылка Одноклассники</span>
                 <svg width="27" height="27">
                   <use xlink:href="img/sprite.svg#icon-classmates"></use>
                 </svg>
@@ -259,6 +270,7 @@
             </li>
             <li class="socials-list__item">
               <a class="socials-list__link">
+                <span class="visually-hidden">Ссылка Вконтакте</span>
                 <svg width="27" height="27">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
@@ -271,7 +283,7 @@
         <div class="site-parts-list">
           <div class="site-parts-list__wrapper">
             <div class="site-parts-list__wrapper-second">
-              <h5>Разделы сайта</h5>
+              <h3>Разделы сайта</h3>
               <svg width="16" height="16" class="js-plus-parts visually-hidden">
                 <use xlink:href="img/sprite.svg#icon-plus"></use>
               </svg>
@@ -307,7 +319,7 @@
           </div>
           <div class="site-parts-list__wrapper">
             <div class="site-parts-list__wrapper-second">
-              <h5>Наш офис</h5>
+              <h3>Наш офис</h3>
               <svg width="16" height="16" class="js-plus-office visually-hidden">
                 <use xlink:href="img/sprite.svg#icon-plus"></use>
               </svg>
@@ -316,16 +328,16 @@
               </svg>
               <ul class="site-list list js-office-list">
                 <li class="site-list__item list__item">
-                  <a class="site-list__link list__link" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
+                  <span class="site-list__link list__link" href="#">г. Мытищи, Олимпийский проспект, д.10</span>
                 </li>
                 <li class="site-list__item list__item">
-                  <a class="site-list__link list__link" href="#">+7 (495) 589-40-50</a>
+                  <a class="site-list__link list__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
                 </li>
                 <li class="site-list__item list__item">
-                  <a class="site-list__link list__link" href="#">+7 (925) 003-87-67</a>
+                  <a class="site-list__link list__link" href="tel:+79250038767">+7 (925) 003-87-67</a>
                 </li>
                 <li class="site-list__item list__item">
-                  <a class="site-list__link list__link" href="#">+7 (926) 926-080-79</a>
+                  <a class="site-list__link list__link" href="tel:+792692608079">+7 (926) 926-080-79</a>
                 </li>
               </ul>
             </div>
@@ -343,34 +355,31 @@
     </div>
   </footer>
   <div class="modal hide" id="modal">
-    <div class="modal__close">
+    <button class="modal__close">
       <svg class="icon-close" role="button" width="17" height="17">
         <use xlink:href="img/sprite.svg#icon-close"></use>
       </svg>
-    </div>
+    </button>
     <h2>Закажите звонок</h2>
     <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
       <h3>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</h3>
-      <div class="modal__form-name">
+      <div class="modal__form-input-wrapper">
         <label class="visually-hidden" for="name-first">Имя</label>
         <input type="text" id="name-first" placeholder="Имя" required="">
       </div>
-      <div class="modal__form-tel">
+      <div class="modal__form-input-wrapper">
         <label class="visually-hidden" for="tel-number">Номер телефона</label>
-        <input type="tel" id="tel-number" placeholder="Телефон" required="" maxlength="18">
+        <input type="tel" id="tel-number" placeholder="Телефон" required="" maxlength="18" data-mask="+7(000)000 00 00">
       </div>
       <textarea id="question" rows="20" required="">Ваш вопрос</textarea>
       <button class="button" type="submit">Отправить</button>
-      <div class="modal__form-agreement">
-        <input type="checkbox" id="agreement" checked="">
-        <label for="agreement">
-          <span>Я согласен на обработку персональных данных</span>
-        </label>
+      <div class="modal__form-submit-checkbox">
+        <input class="visually-hidden" type="checkbox" id="agreement" checked="">
+        <label for="agreement">Я согласен на обработку персональных данных</label>
       </div>
     </form>
   </div>
-  <script src="https://unpkg.com/imask"></script>
   <script src="js/main.js"></script>
-  <script src="js/mask.js"></script>
+  <script src="js/vendor.js"></script>
 </body>
 </html>
