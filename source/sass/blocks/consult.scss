@@ -5,23 +5,24 @@
   padding-top: 96px;
   padding-bottom: 114px;
 
-  background-image: url("../img/paperplane@1x.png"), url("../img/desktop-plate-triangles.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: left 350px top 165px, right 855px top -176px;
+  background-image: url("../img/desktop-plate-triangles.svg");
+  background-repeat: no-repeat;
+  background-position: right 855px top -176px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/paperplane@2x.png"), url("../img/desktop-plate-triangles.svg");
-    background-size: 511px 288px, 100% 150%;
+    background-image: url("../img/desktop-plate-triangles.svg");
+    background-size: 100% 150%;
   }
 }
 
 .consult__wrapper {
-  width: 1170px;
+  max-width: 570px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .consult__wrapper-second {
@@ -61,23 +62,27 @@
 
   .consult__wrapper {
     box-sizing: border-box;
-    min-width: 770px;
+    max-width: 770px;
     padding-left: 92.15px;
     padding-right: 87px;
   }
 
   .consult__wrapper-second {
     width: auto;
+    margin: 0 auto;
   }
 
   .consult h3 {
     font-size: 32px;
     line-height: 45px;
-    margin-top: 80px;
   }
 
   .consult p {
     margin-top: 15px;
+  }
+
+  .consult img {
+    display: none;
   }
 }
 

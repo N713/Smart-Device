@@ -1,9 +1,11 @@
 .print-plates {
-  width: 1411px;
+  width: 100%;
+  max-width: 1411px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
+  padding: 0 30px;
   padding-bottom: 258px;
   margin: 0 auto;
 }

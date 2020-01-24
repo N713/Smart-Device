@@ -1,8 +1,8 @@
 .features__list {
-  width: 1170px;
+  max-width: 1170px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 auto;
   margin-top: 126px;
 }
@@ -16,13 +16,14 @@
 
 .features__list-link {
   box-sizing: border-box;
-  width: 570px;
+  max-width: 570px;
   min-height: 299px;
   border: 1px solid #EBEBEB;
   border-left: 3px solid $mainBlueColor;
   padding-left: 41px;
   padding-right: 40px;
   padding-top: 40px;
+  padding-bottom: 40px;
 
   &:hover {
     background-color: $mainBlueColor;
@@ -63,7 +64,7 @@
 
 @media (max-width: $tabletResolution) {
   .features__list {
-    width: 750px;
+    //width: 750px;
     margin-top: 54px;
     justify-content: flex-start;
     padding: 0 25px;
@@ -85,7 +86,7 @@
     flex-direction: column;
     box-sizing: border-box;
     min-height: 232px;
-    width: 345px;
+    //width: 345px;
     padding: 22.55px 18.62px 10.55px 25px;
   }
 
@@ -123,7 +124,7 @@
   }
 
   .features__list-item {
-    width: 290px;
+    //width: 290px;
     margin-right: 0;
     margin-bottom: 20px;
   }

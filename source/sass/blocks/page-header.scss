@@ -1,10 +1,13 @@
 .page-header {
-  width: 1411px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1471px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .page-header__logo-link {
@@ -69,11 +72,15 @@
 }
 
 .page-header__link--tel svg {
-  margin-right: 15px;
+  margin-right: 10px;
+  margin-top: -5px;
+  padding: 5px;
 }
 
 .page-header__link--mail svg {
-  margin-right: 18px;
+  margin-right: 13px;
+  margin-top: -2px;
+  padding: 5px;
 }
 
 .page-header__button {
@@ -84,7 +91,6 @@
 @media (max-width: $tabletResolution) {
   .page-header {
     box-sizing: border-box;
-    width: 750px;
     padding: 0 15px;
   }
 
@@ -122,7 +128,7 @@
 
 @media (max-width: $mobileResolution) {
   .page-header {
-    width: 320px;
+    width: 100%;
   }
 
   .page-header__logo-link svg {

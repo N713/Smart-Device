@@ -2,11 +2,11 @@
   display: flex;
   width: 112px;
   justify-content: space-between;
-  margin-top: 54px;
-  margin-left: -3px;
 }
 
 .socials-list__item {
+  padding: 5px;
+
   &:hover {
     opacity: 0.5;
     cursor: pointer;

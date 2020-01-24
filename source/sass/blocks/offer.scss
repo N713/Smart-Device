@@ -6,10 +6,11 @@
 }
 
 .offer__wrapper {
-  width: 1170px;
+  max-width: 1170px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .offer h2 {
@@ -25,6 +26,7 @@
 .offer__list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
   margin-top: 47px;
 }
 

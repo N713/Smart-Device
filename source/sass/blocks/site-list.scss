@@ -1,5 +1,4 @@
 .site-list {
-  margin-top: 26px;
   margin-right: 75px;
 }
 
@@ -12,6 +11,7 @@
 }
 
 .site-list__link {
+  width: fit-content;
   color: rgba(27, 45, 55, 0.5);
 
   &:hover {
