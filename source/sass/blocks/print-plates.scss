@@ -11,6 +11,7 @@
 }
 
 .print-plates h2 {
+  /*
   width: 718px;
   font-family: $robotoRegular;
   font-style: normal;
@@ -20,8 +21,17 @@
   letter-spacing: 0.07em;
   text-transform: uppercase;
 
+   */
+  font-family: $robotoRegular;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
   @include reset;
-  margin-top: 231px;
+  margin-top: 230px;
   margin-left: -5px;
 }
 
@@ -118,6 +128,10 @@
   .print-plates__button {
     margin-left: 46px;
     margin-top: 54px;
+  }
+
+  .print-plates__link {
+    display: none;
   }
 }
 

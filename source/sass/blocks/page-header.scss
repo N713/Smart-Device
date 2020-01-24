@@ -1,7 +1,7 @@
 .page-header {
   box-sizing: border-box;
   width: 100%;
-  max-width: 1471px;
+  max-width: 1475px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -39,7 +39,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
-  min-width: 700px;
+  max-width: 675px;
 }
 
 .page-header__link {
@@ -68,7 +68,7 @@
 }
 
 .page-header__link--tel {
-  margin-left: 82px;
+  margin-left: 81px;
 }
 
 .page-header__link--tel svg {
@@ -78,13 +78,14 @@
 }
 
 .page-header__link--mail svg {
-  margin-right: 13px;
+  margin-right: 10px;
   margin-top: -2px;
   padding: 5px;
 }
 
 .page-header__button {
-  margin-left: 50px;
+  margin-left: 46px;
+  margin-right: 5px;
   margin-bottom: 5px;
 }
 

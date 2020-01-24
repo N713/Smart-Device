@@ -1,4 +1,10 @@
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 180px;
+  height: 45px;
   font-family: $robotoRegular;
   font-weight: 500;
   font-style: normal;
@@ -12,7 +18,7 @@
   background-color: transparent;
   border: 1px solid $whiteColor;
   border-radius: 5px;
-  padding: 13px 28px;
+  padding: 10px;
 
   &:hover {
     color: $mainBlueColor;
