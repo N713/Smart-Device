@@ -11,17 +11,6 @@
 }
 
 .print-plates h2 {
-  /*
-  width: 718px;
-  font-family: $robotoRegular;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 80px;
-  line-height: 94px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-
-   */
   font-family: $robotoRegular;
   font-style: normal;
   font-weight: bold;
@@ -55,8 +44,8 @@
   width: 66px;
   height: 2px;
   position: absolute;
-  left: 0;
-  top: 15px;
+  left: -2px;
+  top: 17px;
   background-color: $whiteColor;
 }
 
@@ -73,7 +62,7 @@
   opacity: 0.5;
   transform: rotate(-90deg);
   position: absolute;
-  top: 732px;
+  top: 735px;
   left: 215px;
 
   &:hover {
@@ -87,8 +76,8 @@
 }
 
 .print-plates__button {
-  margin-top: 45px;
-  margin-left: 94px;
+  margin-top: 43px;
+  margin-left: 92px;
 }
 
 .print-plates__button span:last-child {

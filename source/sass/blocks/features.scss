@@ -1,10 +1,13 @@
+.features {
+  padding-top: 112px;
+}
+
 .features__list {
   max-width: 1170px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 auto;
-  margin-top: 126px;
 }
 
 .features__list-item {
@@ -12,6 +15,10 @@
   display: flex;
   background-color: $whiteColor;
   margin-bottom: 30px;
+}
+
+.features__list-item:nth-child(3n) .features__list-link svg {
+  margin-top: 4px;
 }
 
 .features__list-link {
@@ -22,7 +29,7 @@
   border-left: 3px solid $mainBlueColor;
   padding-left: 41px;
   padding-right: 40px;
-  padding-top: 40px;
+  padding-top: 38px;
   padding-bottom: 40px;
 
   &:hover {
@@ -51,6 +58,7 @@
 }
 
 .features__list-link p {
+  width: fit-content;
   font-family: $ptMono;
   font-style: normal;
   font-weight: normal;
@@ -64,7 +72,6 @@
 
 @media (max-width: $tabletResolution) {
   .features__list {
-    //width: 750px;
     margin-top: 54px;
     justify-content: flex-start;
     padding: 0 25px;

@@ -6,7 +6,7 @@
   width: 180px;
   height: 45px;
   font-family: $robotoRegular;
-  font-weight: 500;
+  font-weight: bold;
   font-style: normal;
   font-size: 14px;
   line-height: 16px;
@@ -36,12 +36,12 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  width: 407px;
   min-height: 55px;
   font-size: 16px;
   line-height: 19px;
   background-color: $mainBlueColor;
   border-color: $mainBlueColor;
-  padding: 13px 44px;
 
   &:hover {
     background-color: $whiteColor;
@@ -58,7 +58,7 @@
   min-width: 180px;
   color: $mainBlueColor;
   border: 1px solid $mainBlueColor;
-  margin-top: 40px;
+  margin-top: 38px;
 
   &:hover {
     color: $whiteColor;

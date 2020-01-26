@@ -2,7 +2,7 @@
   width: 100%;
   background-color: $mainColor;
   color: $whiteColor;
-  padding-bottom: 117px;
+  padding-bottom: 97px;
 }
 
 .offer__wrapper {
@@ -20,14 +20,14 @@
   line-height: 51px;
 
   @include reset;
-  margin-top: 90px;
+  margin-top: 89px;
 }
 
 .offer__list {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-top: 47px;
+  margin-top: 51px;
 }
 
 .offer__list-item {
@@ -69,7 +69,7 @@
 
 .offer__list-link h3 {
   position: absolute;
-  top: 53px;
+  top: 51px;
   left: 43.7px;
   width: 162px;
   font-style: normal;
@@ -90,8 +90,8 @@
   background: $mainBlueColor;
   align-self: flex-end;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 4px;
+  right: 1px;
   z-index: 1;
 }
 
@@ -106,8 +106,8 @@
   border-left-color: transparent;
   transform: rotate(45deg);
   position: absolute;
-  bottom: 28.5px;
-  right: 28.5px;
+  bottom: 31.5px;
+  right: 29.5px;
   z-index: 1;
 }
 
