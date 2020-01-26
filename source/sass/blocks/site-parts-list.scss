@@ -1,6 +1,7 @@
 .site-parts-list {
   display: flex;
   padding-top: 5px;
+  margin-left: -2px;
 }
 
 .site-parts-list__wrapper {
@@ -36,7 +37,8 @@
   color: #1B2D37;
 
   @include reset;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
+  margin-left: 2px;
 }
 
 .site-parts-list__wrapper:last-child h3 {

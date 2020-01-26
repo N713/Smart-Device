@@ -1,12 +1,13 @@
 .features {
+  padding: 0 30px;
   padding-top: 112px;
 }
 
 .features__list {
-  max-width: 1170px;
+  max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 auto;
 }
 
