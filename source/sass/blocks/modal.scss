@@ -191,10 +191,10 @@ input[type="checkbox"]:checked + label:before,
 input[type="checkbox"]:not(:checked) + label:before, {
   content: "";
   position: absolute;
-  left: 0;
-  top: 11px;
-  width: 16px;
-  height: 16px;
+  left: 8px;
+  top: 9px;
+  width: 15px;
+  height: 15px;
   border: 1px solid $whiteColor;
 }
 
@@ -206,8 +206,8 @@ input[type="checkbox"]:not(:checked) + label:after {
 
 input[type="checkbox"]:checked + label:after,
 input[type="checkbox"]:not(:checked) + label:after {
-  left: 5px;
-  top: 15px;
+  left: 13px;
+  top: 12px;
   width: 7.5px;
   height: 4.5px;
   border-left: 1px solid $whiteColor;

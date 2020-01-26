@@ -1,6 +1,6 @@
 .consult {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   background-color: $mainBlueColor;
   padding-top: 92px;
   padding-bottom: 114px;
@@ -17,30 +17,26 @@
   }
 }
 
-.consult img {
-  //width: auto;
-  /*
-  position: relative;
-  top: 70px;
-  left: -70px;
-
-   */
+.consult__plane {
+  display: flex;
+  width: 511px;
+  max-height: 288px;
+  background-image: url("../img/paperplane@1x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  margin-top: 70px;
+  margin-left: -28px;
 }
 
 .consult__wrapper {
-  max-width: 570px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  /*
-  position: relative;
-  right: -40px;
-
-   */
+  max-width: 590px;
+  margin-left: 106px;
+  padding-left: 10px;
 }
 
 .consult__wrapper-second {
-  max-width: 570px;
+  max-width: 575px;
 }
 
 .consult h3,
@@ -57,6 +53,7 @@
 
   @include reset;
   margin-bottom: 10px;
+  margin-left: -5px;
 }
 
 .consult p {
@@ -74,7 +71,7 @@
     padding-bottom: 104px;
   }
 
-  .consult img {
+  .consult__plane {
     display: none;
   }
 
