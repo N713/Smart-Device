@@ -1,7 +1,4 @@
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   box-sizing: border-box;
   width: 180px;
   height: 45px;
@@ -54,6 +51,9 @@
 }
 
 .button--more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   min-width: 180px;
   color: $mainBlueColor;
@@ -71,6 +71,9 @@
 }
 
 .button--submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   width: 270px;
 }
@@ -80,8 +83,6 @@
     box-sizing: border-box;
     width: 379px;
     height: 55px;
-    padding: 13px;
-    padding-top: 17px;
   }
 
   .button--submit {

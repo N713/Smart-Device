@@ -89,6 +89,7 @@
     width: 424px;
     margin-left: 93px;
     margin-right: auto;
+    padding: 0;
     padding-bottom: 163px;
   }
 
@@ -96,7 +97,7 @@
     width: 424px;
     font-size: 60px;
     line-height: 70px;
-    margin-top: 117px;
+    margin-top: 115px;
   }
 
   .print-plates p {
@@ -110,7 +111,7 @@
 
   .print-plates p::after {
     width: 33px;
-    top: 18px;
+    top: 16px;
     left: -2px;
   }
 

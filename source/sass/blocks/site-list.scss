@@ -1,5 +1,5 @@
 .site-list {
-  margin-right: 75px;
+  margin-right: 72px;
 }
 
 .site-list__item {
@@ -20,6 +20,12 @@
 
   &:active {
     opacity: 0.2;
+  }
+}
+
+@media (max-width: $tabletResolution) {
+  .site-list {
+    margin-right: 0;
   }
 }
 

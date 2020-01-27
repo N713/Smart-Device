@@ -89,6 +89,9 @@
 }
 
 .page-header__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 46px;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -102,6 +105,8 @@
 
   .page-header__links-wrapper {
     min-width: 100px;
+    margin-right: 3px;
+    margin-top: -4px;
   }
 
   .page-header__logo-text-wrapper {
@@ -117,8 +122,12 @@
     margin: 0;
   }
 
+  .page-header__logo-link {
+    margin-left: 10px;
+  }
+
   .page-header__link--tel {
-    margin-left: 27px;
+    margin-left: 20px;
   }
 
   .page-header__link--tel svg {
@@ -129,6 +138,10 @@
   .page-header__link--mail svg {
     width: 32px;
     height: 21px;
+  }
+
+  .page__header .page-header__button {
+    display: none;
   }
 }
 

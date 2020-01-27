@@ -1,7 +1,6 @@
 .site-parts-list {
   display: flex;
   padding-top: 5px;
-  margin-left: -2px;
 }
 
 .site-parts-list__wrapper {
@@ -37,8 +36,7 @@
   color: #1B2D37;
 
   @include reset;
-  margin-bottom: 22px;
-  margin-left: 2px;
+  margin-bottom: 25px;
 }
 
 .site-parts-list__wrapper:last-child h3 {
@@ -52,7 +50,6 @@
 @media (max-width: $tabletResolution) {
   .site-parts-list {
     margin: 0;
-    margin-top: 24px;
   }
 
   .site-parts-list__wrapper:first-child .site-list:last-child {
@@ -62,6 +59,7 @@
   .site-parts-list__wrapper {
     align-content: start;
     padding-left: 25px;
+    margin-right: 35px;
   }
 
   .site-parts-list__wrapper:last-child {

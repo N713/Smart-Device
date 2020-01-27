@@ -14,3 +14,9 @@
 .container--half-opacity {
   opacity: 0.5;
 }
+
+@media (max-width: $tabletResolution) {
+  .container {
+    padding-bottom: 0;
+  }
+}

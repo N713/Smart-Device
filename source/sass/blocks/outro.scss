@@ -10,7 +10,7 @@
 }
 
 .outro__wrapper {
-  width: 992px;
+  max-width: 992px;
   display: flex;
   justify-content: space-between;
 }
@@ -26,8 +26,8 @@
   .outro__wrapper {
     width: 100%;
     justify-content: space-between;
-    margin-top: 38px;
-    padding-bottom: 38px;
+    padding-top: 38px;
+    padding-bottom: 36px;
     border-bottom: 1px solid rgba(98, 105, 98, 0.2);
   }
 }

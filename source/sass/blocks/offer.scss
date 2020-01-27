@@ -113,7 +113,11 @@
 
 @media (max-width: $tabletResolution) {
   .offer {
-    padding-bottom: 35px;
+    padding-bottom: 32px;
+  }
+
+  .offer__list {
+    margin-top: 49px;
   }
 
   .offer__wrapper {
@@ -140,6 +144,7 @@
   .offer__list-link {
     min-width: 715px;
     min-height: 256px;
+    max-height: 256px;
   }
 
   .offer__list-link img {
@@ -148,11 +153,17 @@
   }
 
   .offer__list-link h3 {
-    top: 43px;
+    top: 40px;
+  }
+
+  .offer__list-item:last-child .offer__list-link h3 {
+    top: 50px;
+    left: 46px;
   }
 
   .offer__list-link::before {
-    top: 195px;
+    bottom: 0;
+    right: 1px;
   }
 
   .offer__list-link::after {

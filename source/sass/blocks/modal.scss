@@ -222,3 +222,23 @@ input[type="checkbox"]:not(:checked) + label:after {
 input[type="checkbox"]:checked + label:after {
   opacity: 1;
 }
+
+@media (max-width: $tabletResolution) {
+  input[type="checkbox"]:checked + label,
+  input[type="checkbox"]:not(:checked) + label, {
+    padding-left: 32px;
+    padding-top: 13px;
+  }
+
+  input[type="checkbox"]:checked + label:before,
+  input[type="checkbox"]:not(:checked) + label:before, {
+    left: -2px;
+    top: 13px;
+  }
+
+  input[type="checkbox"]:checked + label:after,
+  input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 17px;
+  }
+}

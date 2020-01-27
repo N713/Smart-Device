@@ -68,6 +68,7 @@
 @media (max-width: $tabletResolution) {
   .consult {
     background-image: none;
+    padding-top: 80px;
     padding-bottom: 104px;
   }
 
@@ -78,6 +79,9 @@
   .consult__wrapper {
     box-sizing: border-box;
     max-width: 770px;
+    margin-left: 6px;
+    padding-left: 0;
+    width: 590px;
   }
 
   .consult__wrapper-outer {
@@ -86,8 +90,7 @@
   }
 
   .consult__wrapper-second {
-    width: 100%;
-    margin: 0 auto;
+    max-width: 100%;
   }
 
   .consult h3 {

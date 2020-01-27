@@ -71,13 +71,7 @@
   .about-company {
     width: 750px;
     margin: 0;
-    padding: 21px 5px 83px 210px;
-  }
-
-  .about-company img {
-    height: 361.79px;
-    width: 251.08px;
-    left: 0;
+    padding: 27px 5px 83px 210px;
   }
 
   .about-company h2 {
@@ -85,8 +79,15 @@
     line-height: 45px;
   }
 
+  .about-company h2::before {
+    top: 23px;
+    left: 0;
+    height: 362px;
+    background-size: cover;
+  }
+
   .about-company p {
-    margin: 23px 3px 0;
+    margin: 22px 3px 0;
   }
 
   .about-company__dots {
@@ -100,6 +101,7 @@
 
   .about-company__button {
     margin-left: 2px;
+    margin-top: 41px;
   }
 }
 
