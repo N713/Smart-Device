@@ -17,7 +17,7 @@
 .copyright__container {
   display: flex;
   justify-content: flex-start;
-  width: 1416px;
+  max-width: 1416px;
   margin: 0 auto;
   padding: 15px 0;
 }
@@ -32,15 +32,15 @@
 }
 
 .copyright__item:nth-child(2n) {
-  margin-left: 75px;
+  margin-left: 5.2%;
 }
 
 .copyright__item:nth-child(3n) {
-  margin-left: 142px;
+  margin-left: 10%;
 }
 
 .copyright__item:nth-child(4n) {
-  margin-left: 405px;
+  margin-left: 28.6%;
 }
 
 @media (max-width: $tabletResolution) {
