@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   position: relative;
   background-color: $whiteColor;
-  padding: 0 30px;
 }
 
 .page-footer::after {
@@ -13,7 +12,7 @@
   height: 1px;
   background-color: rgba(98, 105, 98, 0.2);
   position: absolute;
-  bottom: 53px;
+  bottom: 17%;
 }
 
 .page-footer__logo-wrapper {
