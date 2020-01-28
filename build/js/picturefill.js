@@ -1,6 +1,20 @@
 "use strict";
 
-function _typeof31(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof31 = function _typeof31(obj) { return typeof obj; }; } else { _typeof31 = function _typeof31(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof31(obj); }
+function _typeof32(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof32 = function _typeof32(obj) { return typeof obj; }; } else { _typeof32 = function _typeof32(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof32(obj); }
+
+function _typeof31(obj) {
+  if (typeof Symbol === "function" && _typeof32(Symbol.iterator) === "symbol") {
+    _typeof31 = function _typeof31(obj) {
+      return _typeof32(obj);
+    };
+  } else {
+    _typeof31 = function _typeof31(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof32(obj);
+    };
+  }
+
+  return _typeof31(obj);
+}
 
 function _typeof30(obj) {
   if (typeof Symbol === "function" && _typeof31(Symbol.iterator) === "symbol") {
