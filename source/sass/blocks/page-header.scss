@@ -148,6 +148,9 @@
 @media (max-width: $mobileResolution) {
   .page-header {
     width: 100%;
+    padding: 0 7px;
+    position: relative;
+    top: 2px;
   }
 
   .page-header__logo-link svg {
@@ -164,6 +167,6 @@
   }
 
   .page-header__link--tel {
-    margin-left: 20px;
+    margin-left: 8px;
   }
 }

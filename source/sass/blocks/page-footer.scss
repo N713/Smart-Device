@@ -19,6 +19,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 206px;
+  padding-right: 2%;
 }
 
 .page-footer__logo-link {
@@ -87,8 +88,8 @@
 
 @media (max-width: $mobileResolution) {
   .page-footer__logo-wrapper {
-    margin-top: 47px;
-    padding-bottom: 4px;
+    margin-top: 21px;
+    padding-bottom: 3px;
   }
 
   .page-footer__logo-wrapper-second {
@@ -96,7 +97,7 @@
     flex-direction: column;
     width: 320px;
     padding: 0 15px;
-    padding-bottom: 45px;
+    padding-bottom: 40px;
     margin: 0 auto;
   }
 

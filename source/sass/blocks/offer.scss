@@ -26,7 +26,6 @@
 .offer__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
   margin-top: 51px;
 }
 
@@ -203,5 +202,10 @@
   .offer__list-link h3 {
     left: 34.7px;
     top: 20px;
+  }
+
+  .offer__list-item:last-child .offer__list-link h3 {
+    top: 29px;
+    left: 36px;
   }
 }

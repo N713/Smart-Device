@@ -199,7 +199,11 @@ input[type="checkbox"]:checked + label::after {
     box-sizing: border-box;
     width: 320px;
     flex-direction: column;
-    margin-top: 21px;
+    margin-top: 0;
+  }
+
+  .form__input-wrapper {
+    margin-bottom: 30px;
   }
 
   .form input,
@@ -216,7 +220,11 @@ input[type="checkbox"]:checked + label::after {
     margin-bottom: 32px;
   }
 
+  .form__submit {
+    margin-top: 6px;
+  }
+
   .form__submit-checkbox {
-    margin-top: 20px;
+    margin-top: 18px;
   }
 }

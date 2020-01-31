@@ -126,6 +126,7 @@
   .features {
     width: 320px;
     margin: 0 auto;
+    padding-top: 0;
   }
 
   .features__wrapper {
@@ -139,7 +140,6 @@
   }
 
   .features__list-item {
-    //width: 290px;
     margin-right: 0;
     margin-bottom: 20px;
   }

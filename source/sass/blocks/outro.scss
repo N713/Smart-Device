@@ -2,7 +2,6 @@
   box-sizing: border-box;
   width: 1475px;
   display: flex;
-  //flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
   padding: 0 30px;
@@ -11,9 +10,9 @@
 }
 
 .outro__wrapper {
-  max-width: 992px;
   display: flex;
   justify-content: space-between;
+  width: 70.1%;
 }
 
 @media (max-width: $tabletResolution) {
@@ -22,6 +21,7 @@
     flex-direction: column;
     padding: 19px 0;
     padding-bottom: 0;
+    margin: 0;
   }
 
   .outro__wrapper {
@@ -38,6 +38,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    padding-top: 25px;
   }
 
   .outro__wrapper {
