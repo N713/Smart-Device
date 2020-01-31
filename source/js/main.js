@@ -1,5 +1,7 @@
 'use strict';
 
+import smoothscroll from 'smoothscroll-polyfill';
+
 var body = document.querySelector(`body`);
 var modal = document.querySelector(`.modal`);
 var form = modal.querySelector(`.modal__form`);
@@ -40,6 +42,7 @@ var ESC_KEYCODE = 27;
 var TABLET_WIDTH = 768;
 var CATCH_TABLET = window.matchMedia("(min-width:" + TABLET_WIDTH + "px)");
 
+smoothscroll.polyfill();
 partsListCloseIcon.classList.remove(`visually-hidden`);
 officeListCloseIcon.classList.remove(`visually-hidden`);
 
