@@ -14,6 +14,23 @@
   background-color: transparent;
 }
 
+.about-company::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 168px;
+  height: 317px;
+  background-image: url("../img/2005@1x.png");
+  background-repeat: no-repeat;
+  background-size: 218px 317px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/2005@2x.png");
+  }
+}
+
 .about-company img {
   position: absolute;
   left: -28px;
@@ -29,23 +46,6 @@
   margin-bottom: 20px;
 
   @include reset;
-}
-
-.about-company h2::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 2px;
-  left: 5px;
-  width: 168px;
-  height: 317px;
-  background-image: url("../img/2005@1x.png");
-  background-repeat: no-repeat;
-  background-size: 218px 317px;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/2005@2x.png");
-  }
 }
 
 .about-company p {
@@ -74,16 +74,16 @@
     padding: 27px 5px 83px 210px;
   }
 
-  .about-company h2 {
-    font-size: 32px;
-    line-height: 45px;
-  }
-
-  .about-company h2::before {
+  .about-company::before {
     top: 23px;
     left: 0;
     height: 362px;
     background-size: cover;
+  }
+
+  .about-company h2 {
+    font-size: 32px;
+    line-height: 45px;
   }
 
   .about-company p {
@@ -114,13 +114,13 @@
     padding-bottom: 66px;
   }
 
+  .about-company::before {
+    display: none;
+  }
+
   .about-company h2 {
     font-size: 28px;
     line-height: 39px;
-  }
-
-  .about-company h2::before {
-    display: none;
   }
 
   .about-company img {

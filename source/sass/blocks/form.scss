@@ -9,7 +9,7 @@
   box-sizing: border-box;
   width: 270px;
   min-height: 50px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #19BAFF;
   font-family: $ptMono;
   font-style: normal;
   font-weight: normal;
@@ -21,7 +21,7 @@
 
   &:hover {
     cursor: pointer;
-    outline: 1px solid midnightblue;
+    outline: 1px solid $whiteColor;
   }
 
   &:active {
@@ -77,7 +77,7 @@
 
   &:hover {
     cursor: pointer;
-    outline: 1px solid midnightblue;
+    outline: 1px solid $whiteColor;
   }
 
   &:active {
@@ -119,8 +119,8 @@ input[type="checkbox"]:not(:checked) + label {
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked + label:before,
-input[type="checkbox"]:not(:checked) + label:before {
+input[type="checkbox"]:checked + label::before,
+input[type="checkbox"]:not(:checked) + label::before {
   content: "";
   position: absolute;
   left: 8px;
@@ -130,14 +130,14 @@ input[type="checkbox"]:not(:checked) + label:before {
   border: 1px solid $whiteColor;
 }
 
-input[type="checkbox"]:checked + label:after,
-input[type="checkbox"]:not(:checked) + label:after {
+input[type="checkbox"]:checked + label::after,
+input[type="checkbox"]:not(:checked) + label::after {
   content: "";
   position: absolute;
 }
 
-input[type="checkbox"]:checked + label:after,
-input[type="checkbox"]:not(:checked) + label:after {
+input[type="checkbox"]:checked + label::after,
+input[type="checkbox"]:not(:checked) + label::after {
   left: 13px;
   top: 12px;
   width: 7.5px;
@@ -147,11 +147,11 @@ input[type="checkbox"]:not(:checked) + label:after {
   transform: rotate(-45deg);
 }
 
-input[type="checkbox"]:not(:checked) + label:after {
+input[type="checkbox"]:not(:checked) + label::after {
   opacity: 0;
 }
 
-input[type="checkbox"]:checked + label:after {
+input[type="checkbox"]:checked + label::after {
   opacity: 1;
 }
 
@@ -176,14 +176,14 @@ input[type="checkbox"]:checked + label:after {
     margin-top: 4px;
   }
 
-  .form__agreement input[type="checkbox"]:checked + label:before,
-  .form__agreement input[type="checkbox"]:not(:checked) + label:before {
+  .form__agreement input[type="checkbox"]:checked + label::before,
+  .form__agreement input[type="checkbox"]:not(:checked) + label::before {
     left: -2px;
     top: 13px;
   }
 
-  .form__agreement input[type="checkbox"]:checked + label:after,
-  .form__agreement input[type="checkbox"]:not(:checked) + label:after {
+  .form__agreement input[type="checkbox"]:checked + label::after,
+  .form__agreement input[type="checkbox"]:not(:checked) + label::after {
     left: 3px;
     top: 17px;
   }
