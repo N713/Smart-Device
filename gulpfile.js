@@ -100,16 +100,10 @@ gulp.task("clean", function () {
 });
 
 gulp.task("babel", function () {
-  return gulp.src("source/js/*.js")
+  return gulp.src("build/js/*.js")
     .pipe(babel())
-    .pipe(gulp.dest("source/js"));
+    .pipe(gulp.dest("build/js"));
 });
 
-gulp.task("concat", function () {
-  return gulp.src(["libs/*.js", "source/js/vendor.js"])
-    .pipe(concat("vendor.js"))
-    .pipe(gulp.dest("source/js"));
-});
-
-gulp.task("build", gulp.series("clean", "concat", "babel", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "babel"));
 gulp.task("start", gulp.series("build", "server"));
