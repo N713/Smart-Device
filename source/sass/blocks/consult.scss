@@ -122,19 +122,25 @@
   }
 
   .consult h3 {
+    position: relative;
+    right: 38px;
     width: 243px;
     font-size: 28px;
     line-height: 39px;
-    margin-left: 0;
     margin-top: 29px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .consult p {
+    position: relative;
+    right: 26px;
     width: 269px;
     font-size: 16px;
     line-height: 22px;
     margin-top: 14px;
-    margin-right: 0;
     margin-bottom: 22px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

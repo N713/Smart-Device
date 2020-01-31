@@ -17,6 +17,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
   margin: 0;
 }
 
@@ -51,6 +52,11 @@
 
 .site-parts-list__wrapper:last-child h3 {
   margin-top: 0;
+}
+
+.site-parts-list__wrapper:first-of-type h3 {
+  justify-content: flex-start;
+  left: 0;
 }
 
 .site-parts-list__wrapper svg {
@@ -113,7 +119,7 @@
   .site-parts-list__wrapper-second {
     box-sizing: border-box;
     width: 320px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0 15px;
     position: relative;
   }
@@ -127,8 +133,8 @@
   .site-parts-list__wrapper svg {
     display: block;
     position: absolute;
-    right: 15px;
-    top: 30px;
+    right: 17px;
+    top: 29px;
 
     &:hover {
       opacity: 0.5;
@@ -141,7 +147,8 @@
   }
 
   .site-parts-list__wrapper:first-child h3 {
-    left: 13px;
+    left: 0;
+    margin-left: 0;
   }
 
   .site-parts-list__wrapper:last-child h3 {
