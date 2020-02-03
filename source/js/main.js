@@ -1,7 +1,5 @@
 'use strict';
 
-import smoothscroll from 'smoothscroll-polyfill';
-
 var body = document.querySelector(`body`);
 var modal = document.querySelector(`.modal`);
 var form = modal.querySelector(`.modal__form`);
@@ -42,7 +40,7 @@ var ESC_KEYCODE = 27;
 var TABLET_WIDTH = 768;
 var CATCH_TABLET = window.matchMedia("(min-width:" + TABLET_WIDTH + "px)");
 
-smoothscroll.polyfill();
+polyfill();
 partsListCloseIcon.classList.remove(`visually-hidden`);
 officeListCloseIcon.classList.remove(`visually-hidden`);
 
@@ -65,7 +63,7 @@ var openModal = function() {
 };
 
 var scroll = function(element) {
-  element.scrollIntoView({block: `start`, behavior: 'smooth'});
+  element.scrollIntoView({behavior: 'smooth'});
 };
 
 var showSitePartsLists = function () {
