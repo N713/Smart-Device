@@ -1,5 +1,8 @@
 'use strict';
 
+var ESC_KEYCODE = 27;
+var TABLET_WIDTH = 768;
+var isTABLET = window.matchMedia("(min-width:" + TABLET_WIDTH + "px)").matches;
 var body = document.querySelector("body");
 var modal = document.querySelector(".modal");
 var form = modal.querySelector(".modal__form");
@@ -29,9 +32,6 @@ var telInputs = [modalTel, consultTelId];
 var maskOptions = {
   mask: consultTelId.dataset.mask + ''
 };
-var ESC_KEYCODE = 27;
-var TABLET_WIDTH = 768;
-var CATCH_TABLET = window.matchMedia("(min-width:" + TABLET_WIDTH + "px)");
 polyfill();
 partsListCloseIcon.classList.remove("visually-hidden");
 officeListCloseIcon.classList.remove("visually-hidden");
@@ -132,13 +132,13 @@ officeListCloseIcon.addEventListener("click", function () {
   }
 });
 window.addEventListener("resize", function (evt) {
-  if (CATCH_TABLET.matches && officeList.classList.contains("visually-hidden")) {
+  if (isTABLET && officeList.classList.contains("visually-hidden")) {
     officeList.classList.remove("visually-hidden");
     officeListOpenIcon.classList.add("visually-hidden");
     officeListCloseIcon.classList.remove("visually-hidden");
   }
 
-  if (CATCH_TABLET.matches && sitePartsLists[0].classList.contains("visually-hidden")) {
+  if (isTABLET && sitePartsLists[0].classList.contains("visually-hidden")) {
     partsListOpenIcon.classList.add("visually-hidden");
     partsListCloseIcon.classList.remove("visually-hidden");
     showSitePartsLists();
